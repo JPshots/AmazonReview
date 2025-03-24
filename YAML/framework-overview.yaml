@@ -61,7 +61,95 @@ ai_role_and_workflow:
       action: "YOU ensure the review accurately represents the human's experiences while meeting all framework quality standards"
   
   important_note: "The human's product experiences are your source material - you shouldn't invent core content they didn't mention. However, you have creative freedom in how you structure and present that content following the framework."
-
+┌───────────────────────────────────────────────────────────────────────┐
+│                     AMAZON REVIEW FRAMEWORK FLOW                      │
+└───────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌───────────────────────────────────────────────────────────────────────┐
+│ PHASE 1: PREPARATION                                                  │
+│ ┌───────────────────────────────────────────────────────────────────┐ │
+│ │ • Strategic Question Planning                                     │ │
+│ │ • Identify information gaps                                       │ │
+│ │ • Keyword Research                                                │ │
+│ │ • Prioritize questions using scoring criteria                     │ │
+│ └───────────────────────────────────────────────────────────────────┘ │
+└───────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌───────────────────────────────────────────────────────────────────────┐
+│ PHASE 2: INFORMATION GATHERING                                        │
+│ ┌───────────────────────────────────────────────────────────────────┐ │
+│ │ • Submit Initial Questions                                        │ │
+│ │ • Track Information                                               │ │
+│ │ • Follow Up on Critical Gaps                                      │ │
+│ │ • ⚠️ CRITICAL: Wait for complete answers before proceeding ⚠️     │ │
+│ └───────────────────────────────────────────────────────────────────┘ │
+└───────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌───────────────────────────────────────────────────────────────────────┐
+│ PHASE 3: PRE-WRITING PLANNING                                         │
+│ ┌───────────────────────────────────────────────────────────────────┐ │
+│ │ • Content Structure Selection                                     │ │
+│ │ • Personality Balance Determination                               │ │
+│ │ • Creative Technique Planning                                     │ │
+│ │ • Complete Pre-Writing Checklist                                  │ │
+│ └───────────────────────────────────────────────────────────────────┘ │
+└───────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌───────────────────────────────────────────────────────────────────────┐
+│ PHASE 4: CONTENT CREATION                                             │
+│ ┌───────────────────────────────────────────────────────────────────┐ │
+│ │ • Integrated Drafting                                             │ │
+│ │ • Apply Section-Specific Guidelines                               │ │
+│ │ • Implement Strategic Keywords                                    │ │
+│ │ • Apply Formatting Standards                                      │ │
+│ │                                                                   │ │
+│ │ ┌───────────────────────────────────────────────────────────────┐ │ │
+│ │ │ ⚠️ INTERNAL QUALITY CHECKS BEFORE SHARING DRAFT ⚠️          │ │ │
+│ │ │ • Balance check for information/personality ratio             │ │ │
+│ │ │ • Redundancy check to eliminate repetition                    │ │ │
+│ │ │ • Authenticity verification to ensure genuine voice           │ │ │
+│ │ │ • Formatting verification for visual presentation             │ │ │
+│ │ │ • Make all necessary adjustments before presenting draft      │ │ │
+│ │ └───────────────────────────────────────────────────────────────┘ │ │
+│ └───────────────────────────────────────────────────────────────────┘ │
+└───────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌───────────────────────────────────────────────────────────────────────┐
+│ PHASE 5: COLLABORATIVE REFINEMENT                                     │
+│ ┌───────────────────────────────────────────────────────────────────┐ │
+│ │ • Gather Feedback                                                 │ │
+│ │ • Apply Targeted Revisions                                        │ │
+│ │ • Use single update or rewrite command rather than multiple       │ │
+│ │ • Confirm Approval                                                │ │
+│ └───────────────────────────────────────────────────────────────────┘ │
+└───────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌───────────────────────────────────────────────────────────────────────┐
+│ PHASE 6: QUANTIFIED ASSESSMENT                                        │
+│ ┌───────────────────────────────────────────────────────────────────┐ │
+│ │ • Apply Scoring Criteria                                          │ │
+│ │ • Evaluate review against established metrics                     │ │
+│ │ • Score across all quality dimensions                             │ │
+│ │ • Present comprehensive score breakdown                           │ │
+│ └───────────────────────────────────────────────────────────────────┘ │
+└───────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌───────────────────────────────────────────────────────────────────────┐
+│ PHASE 7: PROCESS REVIEW                                               │
+│ ┌───────────────────────────────────────────────────────────────────┐ │
+│ │ • Identify breakthrough insights                                  │ │
+│ │ • Document improvements using structured format                   │ │
+│ │ • Suggest specific framework updates                              │ │
+│ │ • Implement modifications to appropriate YAML components          │ │
+│ └───────────────────────────────────────────────────────────────────┘ │
+└───────────────────────────────────────────────────────────────────────┘
 
 # SEQUENCE WARNING: Follow the exact implementation workflow in order.
 # Information gathering MUST be completed before any review drafting begins.
