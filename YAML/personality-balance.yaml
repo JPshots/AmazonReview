@@ -1,4 +1,4 @@
-# personality_balance.yaml
+# personality-balance.yaml
 # Framework for balancing informational content and personality in reviews
 
 # =============================================================================
@@ -322,8 +322,8 @@ implementation_process:
         name: "RedundancyCheck"
         action: "Complete the pre-submission redundancy check"
         validation: "All redundancy check items must be confirmed"
-        reference: "See quality_control.yaml > redundancy_review section for the comprehensive redundancy checking process"
-        note: "The canonical redundancy review framework is defined in quality_control.yaml"
+        reference: "See quality-control.yaml > redundancy_review section for the comprehensive redundancy checking process"
+        note: "The canonical redundancy review framework is defined in quality-control.yaml"
       
       - order: 5
         name: "FinalRevision"
@@ -468,9 +468,9 @@ authentic_voice_guidelines:
 # =============================================================================
 redundancy_check:
   description: "Process for eliminating unnecessary repetition in reviews"
-  reference: "The comprehensive redundancy review process is defined in quality_control.yaml > redundancy_review"
+  reference: "The comprehensive redundancy review process is defined in quality-control.yaml > redundancy_review"
   implementation_guidance:
-    - "Refer to quality_control.yaml for the complete redundancy checking framework"
+    - "Refer to quality-control.yaml for the complete redundancy checking framework"
     - "Use the checkpoints, resolution strategies, and implementation process defined there"
     - "This centralized approach ensures consistency across the framework"
 
@@ -528,8 +528,8 @@ cross_framework_references:
     - "See writing_process.yaml for revision process related to personality balance"
   
   quality_control_references:
-    - "Refer to quality_control.yaml for the comprehensive redundancy review process"
-    - "See quality_control.yaml for authenticity verification as part of quality assessment"
+    - "Refer to quality-control.yaml for the comprehensive redundancy review process"
+    - "See quality-control.yaml for authenticity verification as part of quality assessment"
 
 # =============================================================================
 # Relationships to Other Framework Components
@@ -547,6 +547,6 @@ framework_relationships:
   - component: "writing_process.yaml"
     relationship: "Integrates personality balance into the writing workflow"
   
-  - component: "quality_control.yaml"
+  - component: "quality-control.yaml"
     relationship: "Provides authenticity verification as part of quality assessment"
-    note: "The redundancy checking process is now centralized in quality_control.yaml"
+    note: "The redundancy checking process is now centralized in quality-control.yaml"

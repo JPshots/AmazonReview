@@ -89,7 +89,7 @@ core_components:
     description: "Organization templates for creating logical, engaging review structures"
     role: "Provides consistent section frameworks adapted to product types"
   
-  - name: "personality_balance.yaml"
+  - name: "personality-balance.yaml"
     description: "Guidelines for balancing informational content with engaging personality"
     role: "Ensures reviews are both informative and engaging"
   
@@ -105,7 +105,7 @@ core_components:
     description: "Visual presentation standards for maximum readability and impact"
     role: "Ensures consistent, scannable formatting across reviews"
   
-  - name: "quality_control.yaml"
+  - name: "quality-control.yaml"
     description: "Assessment frameworks and improvement processes for review excellence"
     role: "Provides verification systems to ensure review quality"
 
@@ -160,7 +160,7 @@ implementation_workflow:
         description: "Based on product complexity"
       
       - action: "Personality Balance Determination"
-        reference: "personality_balance.yaml"
+        reference: "personality-balance.yaml"
         description: "Adjusted for product category"
       
       - action: "Creative Technique Planning"
@@ -194,19 +194,19 @@ implementation_workflow:
     name: "Quality Assurance"
     steps:
       - action: "Redundancy Check"
-        reference: "quality_control.yaml > redundancy_review"
+        reference: "quality-control.yaml > redundancy_review"
         description: "Eliminate unnecessary repetition"
       
       - action: "Authenticity Verification"
-        reference: "personality_balance.yaml > authentic_voice_guidelines"
+        reference: "personality-balance.yaml > authentic_voice_guidelines"
         description: "Ensure genuine voice throughout"
       
       - action: "Final Verification"
-        reference: "quality_control.yaml > final_verification_checklist"
+        reference: "quality-control.yaml > final_verification_checklist"
         description: "Against quality checklist"
       
       - action: "Strategic Refinement"
-        reference: "quality_control.yaml > quality_assessment_framework"
+        reference: "quality-control.yaml > quality_assessment_framework"
         description: "Based on quality assessment"
 
 # =============================================================================
@@ -238,7 +238,7 @@ success_metrics:
 # =============================================================================
 continuous_improvement:
   framework: "Review Reflection Framework"
-  reference: "quality_control.yaml > review_reflection"
+  reference: "quality-control.yaml > review_reflection"
   process:
     - "Identify breakthrough insights meeting all criteria"
     - "Document improvements using structured format"

@@ -1,4 +1,4 @@
-# quality_control.yaml
+# quality-control.yaml
 # Comprehensive framework for assessing and improving review quality
 
 # =============================================================================
@@ -6,11 +6,11 @@
 # =============================================================================
 quality_assessment_framework:
   description: "Comprehensive quality assessment framework to ensure review excellence"
-   integration_sequence:
+  integration_sequence:
     - step: "Pre-drafting planning (writing_process.yaml > critical_pre_planning)"
-    - step: "In-progress balance checks (personality_balance.yaml > implementation_process)"
-    - step: "Pre-submission redundancy review (quality_control.yaml > redundancy_review)"
-    - step: "Final verification (quality_control.yaml > final_verification_checklist)"
+    - step: "In-progress balance checks (personality-balance.yaml > implementation_process)"
+    - step: "Pre-submission redundancy review (quality-control.yaml > redundancy_review)"
+    - step: "Final verification (quality-control.yaml > final_verification_checklist)"
   assessment_criteria:
     - criterion: "Detailed product testing evidence"
       description: "Documentation of thorough, multi-faceted product testing"
@@ -292,7 +292,7 @@ streamlined_report_system:
         - "3-5 bullet points focusing on highest-impact findings"
         - "Each insight directly connects to specific YAML modification"
         - "No more than 2 sentences per insight"
-      example: "Content balance analysis shows over-emphasis on technical details (25% above target) with insufficient practical application examples (40% below target). Recommend adjusting personality_balance.yaml's contentRatios element."
+      example: "Content balance analysis shows over-emphasis on technical details (25% above target) with insufficient practical application examples (40% below target). Recommend adjusting personality-balance.yaml's contentRatios element."
     
     - section: "ProcessImprovements"
       priority: "high"
@@ -533,7 +533,7 @@ framework_relationships:
   - component: "review_strategy.yaml"
     relationship: "Quality control implements the success metrics defined in the core strategy"
   
-  - component: "personality_balance.yaml"
+  - component: "personality-balance.yaml"
     relationship: "Authentic voice verification is assessed as part of quality control"
   
   - component: "content_structure.yaml"

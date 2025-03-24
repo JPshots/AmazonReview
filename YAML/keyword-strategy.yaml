@@ -289,5 +289,5 @@ framework_relationships:
   - component: "content_structure.yaml"
     relationship: "Review structure provides strategic locations for keyword placement"
   
-  - component: "personality_balance.yaml"
+  - component: "personality-balance.yaml"
     relationship: "Keywords must be integrated while maintaining authentic voice"

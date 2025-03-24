@@ -268,8 +268,8 @@ content_organization:
       - "Information should generally appear in its most optimal section only"
       - "Later mentions of key points should add new dimensions rather than repeating"
       - "Paragraph content, list items, and tips sections should contain distinct information types"
-    reference: "The complete redundancy checking process is defined in quality_control.yaml > redundancy_review"
-    note: "This section provides structure-specific guidance, while the comprehensive implementation process is centralized in quality_control.yaml"
+    reference: "The complete redundancy checking process is defined in quality-control.yaml > redundancy_review"
+    note: "This section provides structure-specific guidance, while the comprehensive implementation process is centralized in quality-control.yaml"
     strategic_exceptions:
       - "Key information may be restated when doing so significantly enhances clarity"
       - "Critical safety or compatibility information may appear in multiple sections when warranted"
@@ -394,7 +394,7 @@ framework_relationships:
   - component: "keyword_strategy.yaml"
     relationship: "Structure provides optimal placements for strategic keywords"
   
-  - component: "personality_balance.yaml"
+  - component: "personality-balance.yaml"
     relationship: "Different sections require different personality/information ratios"
   
   - component: "creative_techniques.yaml"
@@ -403,5 +403,5 @@ framework_relationships:
   - component: "formatting_and_style.yaml"
     relationship: "Provides visual presentation guidelines for content structure"
 
-  - component: "quality_control.yaml"
+  - component: "quality-control.yaml"
     relationship: "Provides the canonical redundancy checking process for content structure"

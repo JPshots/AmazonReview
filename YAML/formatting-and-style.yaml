@@ -363,7 +363,7 @@ framework_relationships:
   - component: "content_structure.yaml"
     relationship: "Formatting enhances the structural organization of review content"
   
-  - component: "personality_balance.yaml"
+  - component: "personality-balance.yaml"
     relationship: "Formatting supports personality integration through visual presentation"
   
   - component: "creative_techniques.yaml"
@@ -372,5 +372,5 @@ framework_relationships:
   - component: "writing_process.yaml"
     relationship: "Formatting is applied during the final polish phase of the writing process"
   
-  - component: "quality_control.yaml"
+  - component: "quality-control.yaml"
     relationship: "Proper formatting is assessed as part of the final quality verification"

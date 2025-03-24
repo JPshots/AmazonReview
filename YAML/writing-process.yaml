@@ -32,8 +32,8 @@ process_overview:
         - "Select appropriate thematic approach"
         - "Establish section-specific balance targets"
       references:
-        - "See personality_balance.yaml for detailed personality/information ratio guidance"
-        - "See personality_balance.yaml > implementation_techniques for application methods"
+        - "See personality-balance.yaml for detailed personality/information ratio guidance"
+        - "See personality-balance.yaml > implementation_techniques for application methods"
         - "See creative_techniques.yaml for thematic approach options"
         - "See keyword_strategy.yaml for keyword implementation"
     
@@ -48,14 +48,14 @@ process_overview:
     - phase: "Strategic Refinement"
       description: "Focused improvements to draft content"
       key_activities:
-        - "Complete redundancy check using the quality_control.yaml framework"
+        - "Complete redundancy check using the quality-control.yaml framework"
         - "Verify authentic voice throughout"
         - "Consolidate necessary changes"
         - "Confirm structure and formatting"
       references:
-        - "See personality_balance.yaml for authentic voice guidelines"
+        - "See personality-balance.yaml for authentic voice guidelines"
         - "See content_structure.yaml for formatting requirements"
-        - "See quality_control.yaml for redundancy review process"
+        - "See quality-control.yaml for redundancy review process"
     
     - phase: "Final Verification"
       description: "Comprehensive review against quality standards"
@@ -63,7 +63,7 @@ process_overview:
         - "Verify all checklist items are complete"
         - "Confirm content balance targets are met"
         - "Ensure all planned elements are implemented"
-      reference: "See quality_control.yaml for final review criteria"
+      reference: "See quality-control.yaml for final review criteria"
 
 # =============================================================================
 # Streamlined Review Workflow
@@ -81,7 +81,7 @@ simplified_workflow:
     
     - order: 2
       name: "FirstDraft"
-      reference: "Implements personality guidelines defined in personality_balance.yaml"
+      reference: "Implements personality guidelines defined in personality-balance.yaml"
       action: "Draft each section with integrated personality from the beginning"
       validation: "Review each section for balance before proceeding"
       critical: true
@@ -92,14 +92,14 @@ simplified_workflow:
       action: "Verify information/personality balance in each section"
       validation: "Each section should maintain its pre-determined ratio"
       critical: true
-      reference: "See personality_balance.yaml for ratio guidelines"
+      reference: "See personality-balance.yaml for ratio guidelines"
     
     - order: 4
       name: "RedundancyCheck"
       action: "Complete the pre-submission redundancy check"
       validation: "All redundancy check items must be confirmed"
       critical: true
-      reference: "See quality_control.yaml > redundancy_review for complete process"
+      reference: "See quality-control.yaml > redundancy_review for complete process"
     
     - order: 5
       name: "FinalRevision"
@@ -191,7 +191,7 @@ critical_pre_planning:
         - "Choose techniques that naturally fit the product and context"
         - "Consider the product category and appropriate personality level"
         - "Select techniques that highlight the product's most distinctive features"
-      reference: "See personality_balance.yaml for technique options and implementation"
+      reference: "See personality-balance.yaml for technique options and implementation"
     
     - order: 2
       action: "Determine personality adjustments for each content section"
@@ -199,7 +199,7 @@ critical_pre_planning:
         - "Assign specific ratio targets to each planned section"
         - "Adjust based on content purpose and product category"
         - "Document targets to guide drafting"
-      reference: "See personality_balance.yaml for adjustment guidelines and section-specific allocations"
+      reference: "See personality-balance.yaml for adjustment guidelines and section-specific allocations"
     
     - order: 3
       action: "Pre-select list items for personality enhancement"
@@ -207,7 +207,7 @@ critical_pre_planning:
         - "Identify which 30-40% of list items will receive enhancement"
         - "Focus on the most distinctive or important features"
         - "Plan enhancement style that complements each feature"
-      reference: "See personality_balance.yaml for list item enhancement techniques"
+      reference: "See personality-balance.yaml for list item enhancement techniques"
     
     - order: 4
       action: "Plan thematic elements if using a thematic approach"
@@ -290,12 +290,12 @@ first_draft_success_framework:
 # =============================================================================
 redundancy_check:
   description: "Reference to the comprehensive redundancy review framework"
-  reference: "The complete redundancy checking process is defined in quality_control.yaml > redundancy_review"
+  reference: "The complete redundancy checking process is defined in quality-control.yaml > redundancy_review"
   implementation_guidance:
-    - "Refer to quality_control.yaml for the complete redundancy checking framework"
+    - "Refer to quality-control.yaml for the complete redundancy checking framework"
     - "Use the checkpoints, resolution strategies, and implementation process defined there"
     - "This centralized approach ensures consistency across the framework"
-  implementation_process: "Follow the structured process in quality_control.yaml > redundancy_review > implementation_process"
+  implementation_process: "Follow the structured process in quality-control.yaml > redundancy_review > implementation_process"
 # =============================================================================
 # Strategic Application of Creative Techniques
 # =============================================================================
@@ -347,17 +347,16 @@ creative_technique_application:
 artifact_versioning:
   critical_rules:
     priority: "highest"
-    
-    - id: "single_version_per_response"
-      definition: "Each response must contain a maximum of one artifact version update"
-      rationale: "Multiple updates in a single response create confusion and unnecessarily increase chat length"
-      implementation:
-        - "Collect all feedback points before making any changes"
-        - "Use a single \"update\" command for minor changes or \"rewrite\" for major revisions"
-        - "Bundle all requested modifications into this single operation"
-        - "If changes are substantial, default to \"rewrite\" rather than multiple \"update\" commands"
-      validation:
-        check: "Confirm each response contains no more than one artifact command"
+      - id: "single_version_per_response"
+    definition: "Each response must contain a maximum of one artifact version update"
+    rationale: "Multiple updates in a single response create confusion and unnecessarily increase chat length"
+    implementation:
+      - "Collect all feedback points before making any changes"
+      - "Use a single \"update\" command for minor changes or \"rewrite\" for major revisions"
+      - "Bundle all requested modifications into this single operation"
+      - "If changes are substantial, default to \"rewrite\" rather than multiple \"update\" commands"
+    validation:
+      check: "Confirm each response contains no more than one artifact command"
   
   best_practices:
     - "Use \"update\" for targeted changes to specific sections"
@@ -394,7 +393,7 @@ final_polish_process:
   polish_steps:
     - order: 1
       action: "Complete redundancy check"
-      reference: "See quality_control.yaml > redundancy_review section"
+      reference: "See quality-control.yaml > redundancy_review section"
     
     - order: 2
       action: "Apply final formatting"
@@ -404,7 +403,7 @@ final_polish_process:
     - order: 3
       action: "Verify authentic voice"
       description: "Check for marketing-style language and convert to authentic experience"
-      reference: "See personality_balance.yaml > authentic_voice_guidelines for implementation"
+      reference: "See personality-balance.yaml > authentic_voice_guidelines for implementation"
     
     - order: 4
       action: "Verify keyword implementation"
@@ -430,7 +429,7 @@ final_polish_process:
       - "Strategic keywords are naturally integrated"
       - "Creative elements enhance rather than obscure information"
       - "Specific details (measurements, prices, model numbers) are accurate"
-    reference: "See quality_control.yaml for complete quality assessment framework"
+    reference: "See quality-control.yaml for complete quality assessment framework"
 
 # =============================================================================
 # Relationships to Other Framework Components
@@ -448,7 +447,7 @@ framework_relationships:
   - component: "content_structure.yaml"
     relationship: "Follows structure guidelines for section implementation"
   
-  - component: "personality_balance.yaml"
+  - component: "personality-balance.yaml"
     relationship: "Applies personality balance techniques throughout writing workflow"
   
   - component: "creative_techniques.yaml"
@@ -457,9 +456,9 @@ framework_relationships:
   - component: "formatting_and_style.yaml"
     relationship: "Implements formatting guidelines during content creation"
   
-  - component: "quality_control.yaml"
+  - component: "quality-control.yaml"
     relationship: "Incorporates quality checks throughout writing process"
-    note: "The redundancy checking process is now centralized in quality_control.yaml"
+    note: "The redundancy checking process is now centralized in quality-control.yaml"
   
   - component: "product_adaptations.yaml"
     relationship: "Adjusts writing approach based on product category requirements"

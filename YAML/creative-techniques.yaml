@@ -422,9 +422,9 @@ cross_framework_references:
   description: "Key connections to other framework components for effective implementation"
   
   personality_balance_references:
-    - "Refer to personality_balance.yaml for specific humor techniques and implementations"
-    - "Consult personality_balance.yaml for authentic voice guidelines when implementing creative elements"
-    - "See personality_balance.yaml for information/personality ratio guidance when distributing creative elements"
+    - "Refer to personality-balance.yaml for specific humor techniques and implementations"
+    - "Consult personality-balance.yaml for authentic voice guidelines when implementing creative elements"
+    - "See personality-balance.yaml for information/personality ratio guidance when distributing creative elements"
   
   content_structure_references:
     - "Refer to content_structure.yaml for review section definitions when planning creative element placement"
@@ -444,11 +444,11 @@ framework_relationships:
   - component: "content_structure.yaml"
     relationship: "Thematic elements inform section naming and organization"
   
-  - component: "personality_balance.yaml"
+  - component: "personality-balance.yaml"
     relationship: "Creative techniques provide structured approaches while personality_balance guides implementation ratios"
   
   - component: "writing_process.yaml"
     relationship: "Creative techniques are planned and implemented throughout writing workflow"
   
-  - component: "quality_control.yaml"
+  - component: "quality-control.yaml"
     relationship: "Creative elements must enhance rather than detract from review quality"

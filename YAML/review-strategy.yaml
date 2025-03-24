@@ -68,7 +68,7 @@ value_drivers:
       - "Maintain 55% informational, 40% personality, 5% flexibility ratio"
       - "Front-load information before adding personality"
       - "Adjust balance based on product category and section purpose"
-    reference: "See personality_balance.yaml for detailed implementation"
+    reference: "See personality-balance.yaml for detailed implementation"
 
   - driver: "Differentiated Insight"
     description: "Unique perspectives that distinguish review from standard content"
@@ -105,7 +105,7 @@ success_metrics:
     - metric: "Authentic Voice"
       description: "Review reads as genuine user experience"
       assessment: "Passes authentic voice guidelines verification"
-      reference: "See personality_balance.yaml for authenticity verification framework"
+      reference: "See personality-balance.yaml for authenticity verification framework"
       
     - metric: "Purchase Guidance Clarity"
       description: "Review helps reader make informed decision"
@@ -148,7 +148,7 @@ framework_relationships:
   - component: "content_structure.yaml"
     relationship: "Defines review organization and section components"
     
-  - component: "personality_balance.yaml"
+  - component: "personality-balance.yaml"
     relationship: "Details information/personality ratio implementation"
     
   - component: "writing_process.yaml"
