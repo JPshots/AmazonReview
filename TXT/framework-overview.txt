@@ -114,55 +114,125 @@ core_components:
 # Implementation Workflow
 # =============================================================================
 implementation_workflow:
-  # Phases 1-4 remain as previously defined
+  phase_1:
+    name: "Preparation"
+    steps:
+      - action: "Strategic Question Planning"
+        reference: "question_framework.yaml"
+        activities:
+          - "Identify information gaps using contextual gaps framework"
+          - "Prioritize questions using scoring criteria"
+          - "Prepare comprehensive initial question set"
+      
+      - action: "Keyword Research"
+        reference: "keyword_strategy.yaml"
+        activities:
+          - "Identify primary product category keywords"
+          - "List feature-specific and comparison keywords"
+          - "Map compatibility and problem-solution terminology"
+  
+  phase_2:
+    name: "Information Gathering"
+    steps:
+      - action: "Submit Initial Questions"
+        description: "Establish complete understanding of product"
+      
+      - action: "Track Information"
+        description: "Prevent redundant questioning"
+      
+      - action: "Follow Up on Critical Gaps"
+        reference: "question_framework.yaml > adaptive_follow_up_system"
+    
+    critical_requirement:
+      priority: "HIGHEST"
+      instruction: "MANDATORY: Wait for complete answers to questions before proceeding to Phase 3"
+      rationale: "Review drafting must not begin until information gathering is complete"
+      implementation:
+        - "Submit all initial questions in a single consolidated query"
+        - "Await complete responses before any review drafting begins"
+        - "Verify critical information is obtained before proceeding"
+        - "Any review draft attempted before question responses are received will be incomplete and require extensive revision"
+  
+  phase_3:
+    name: "Pre-Writing Planning"
+    steps:
+      - action: "Content Structure Selection"
+        reference: "content_structure.yaml"
+        description: "Based on product complexity"
+      
+      - action: "Personality Balance Determination"
+        reference: "personality-balance.yaml"
+        description: "Adjusted for product category"
+      
+      - action: "Creative Technique Planning"
+        reference: "creative_techniques.yaml"
+        description: "Including potential thematic approaches"
+      
+      - action: "Complete Pre-Writing Checklist"
+        reference: "writing_process.yaml > critical_pre_planning"
+        description: "Mandatory before drafting begins"
+  
+  phase_4:
+    name: "Content Creation"
+    steps:
+      - action: "Integrated Drafting"
+        reference: "writing_process.yaml > first_draft_success_framework"
+        description: "Balances information and personality from the beginning"
+      
+      - action: "Apply Section-Specific Guidelines"
+        reference: "content_structure.yaml"
+        description: "For each component of the review"
+      
+      - action: "Implement Strategic Keywords"
+        reference: "keyword_strategy.yaml > placement_strategy"
+        description: "Naturally throughout the content"
+      
+      - action: "Apply Formatting Standards"
+        reference: "formatting_and_style.yaml"
+        description: "For visual presentation"
   
   phase_5:
-    name: "Collaborative Refinement"
-    description: "Work with human to refine and perfect the review"
+    name: "Quality Assurance"
     steps:
-      - action: "Gather Feedback"
-        description: "Receive human input on the finalized draft"
+      - action: "Redundancy Check"
+        reference: "quality-control.yaml > redundancy_review"
+        description: "Eliminate unnecessary repetition"
       
-      - action: "Apply Targeted Revisions"
-        description: "Make specific refinements based on feedback"
-        implementation:
-          - "Use a single update or rewrite command rather than multiple changes"
-          - "Maintain content balance through revisions"
-          - "Preserve authentic voice during modifications"
+      - action: "Authenticity Verification"
+        reference: "personality-balance.yaml > authentic_voice_guidelines"
+        description: "Ensure genuine voice throughout"
       
-      - action: "Confirm Approval"
-        description: "Verify the human is satisfied with the refined version"
+      - action: "Final Verification"
+        reference: "quality-control.yaml > final_verification_checklist"
+        description: "Against quality checklist"
+      
+      - action: "Strategic Refinement"
+        reference: "quality-control.yaml > quality_assessment_framework"
+        description: "Based on quality assessment"
+
+# =============================================================================
+# Success Metrics
+# =============================================================================
+success_metrics:
+  quantitative:
+    - metric: "Helpful Votes"
+      target: "Top 10% of category reviews"
+    
+    - metric: "Search Visibility"
+      target: "Presence in relevant product searches"
+    
+    - metric: "Length Effectiveness Ratio"
+      target: "Maximum value with optimal length"
   
-  phase_6:
-    name: "Quantified Assessment"
-    description: "Provide objective scoring of the finalized review"
-    reference: "quality-control.yaml > scoring_system"
-    steps:
-      - action: "Apply Scoring Criteria"
-        description: "Evaluate review against established metrics"
-        categories:
-          - "Testing Depth (0-20 points)"
-          - "Information Quality (0-20 points)"
-          - "Authenticity (0-20 points)"
-          - "Writing Quality (0-20 points)"
-          - "Helpfulness (0-20 points)"
-      
-      - action: "Present Score Summary"
-        description: "Share comprehensive score breakdown"
-  
-  phase_7:
-    name: "Process Review"
-    description: "Evaluate the review creation process for future improvement"
-    reference: "quality-control.yaml > review_reflection"
-    steps:
-      - action: "Identify Breakthrough Insights"
-        description: "Document significant patterns or improvements discovered"
-      
-      - action: "Implement Framework Updates"
-        description: "Suggest specific adjustments to framework components"
-      
-      - action: "Note Process Efficiencies"
-        description: "Document workflow improvements for future reviews"
+  qualitative:
+    - metric: "Information Completeness"
+      assessment: "Covers all critical product aspects"
+    
+    - metric: "Authentic Voice"
+      assessment: "Reads as genuine user experience"
+    
+    - metric: "Purchase Guidance"
+      assessment: "Clear identification of ideal users"
 
 # =============================================================================
 # Continuous Improvement
