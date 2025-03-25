@@ -85,6 +85,26 @@ keyword_categories:
       - "Include in experiential or solution-focused sections"
       - "Use when describing specific use cases"
 
+
+workflow_integration:
+  pre_writing_planning:
+    description: |
+      During the "Pre-Writing Planning" phase of writing_process.yaml, ensure the following keyword-related tasks are completed:
+      - Identify primary keywords based on product category and features.
+      - Identify secondary keywords related to benefits, usage, and comparisons.
+      - Plan keyword placement within the review structure (title, opening, body).
+      - Consider keyword variations and long-tail keywords for natural integration.
+    reminder: "Refer to the 'Keyword Implementation Check' step in writing_process.yaml > phase_3 for required tasks."
+  content_creation:
+    description: |
+      During the "Content Creation" phase of writing_process.yaml, ensure the following keyword-related tasks are completed:
+      - Integrate primary keywords naturally into the title and opening.
+      - Weave secondary keywords into the body of the review.
+      - Use keyword variations to maintain natural flow and avoid repetition.
+      - Include long-tail keywords where appropriate to capture specific user searches.
+    reminder: "Refer to the 'Keyword Implementation Check' step in writing_process.yaml > phase_3 for required tasks."
+
+
 # =============================================================================
 # Implementation Process
 # =============================================================================
@@ -149,6 +169,26 @@ implementation_process:
         description: "How likely buyers are to use this exact term"
         importance: "Medium-High"
         assessment: "Uses common terminology rather than jargon when possible"
+        
+  keyword_categories:
+    - name: "Primary Keywords"
+      description: "What someone would type to find this product"
+      examples:
+        - "'75mm lens', 'noise cancelling headphones', 'forehead thermometer'"
+      search_intent: "Users looking for the specific product or category"
+      priority: "Highest"
+      implementation:
+        - "Include in review title (see writing_process.yaml > phase_3 > title_creation)"  # Cross-reference added
+        - "Use in opening paragraph (see writing_process.yaml > phase_3 > opening_hook)" # Cross-reference added
+        - "Repeat naturally 2-3 times throughout review"
+      # Reminder: Ensure primary keywords are integrated during Content Creation (writing_process.yaml > phase_3).
+
+  best_practices:
+    - "Use keyword variations and synonyms for natural flow (see writing_process.yaml > phase_3 > keyword_implementation_check)" # Cross-reference added
+    - "Provide helpful context around keywords"
+    - "Incorporate keywords that potential buyers might search for"
+    - "Avoid keyword stuffing or repetitive phrasing"
+    # Reminder: Apply these best practices during Content Creation (writing_process.yaml > phase_3).
 
 # =============================================================================
 # Keyword Placement Strategy

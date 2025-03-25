@@ -1,3 +1,10 @@
+# framework_overview.yaml
+# High-level summary of the Amazon Vine Program review framework
+# This document serves as the master reference for the entire review system
+
+# =============================================================================
+# Project Overview
+# =============================================================================
 # PRIMARY DOCUMENT: FRAMEWORK OVERVIEW - READ THIS FIRST
 # AI PROCESSING INSTRUCTION: This document provides the complete map and entry point
 # to the Amazon Review Framework. Reference this overview for understanding how all
@@ -54,14 +61,81 @@ ai_role_and_workflow:
       action: "YOU ensure the review accurately represents the human's experiences while meeting all framework quality standards"
   
   important_note: "The human's product experiences are your source material - you shouldn't invent core content they didn't mention. However, you have creative freedom in how you structure and present that content following the framework."
-
-# framework_overview.yaml
-# High-level summary of the Amazon Vine Program review framework
-# This document serves as the master reference for the entire review system
-
 # =============================================================================
-# Project Overview
+# process flowchart 
 # =============================================================================
+  flowchart TD
+    title["AMAZON REVIEW FRAMEWORK FLOW"]
+    
+    subgraph P1["PHASE 1: PREPARATION"]
+        direction TB
+        Q["Strategic Question Planning"]
+        K["Keyword Research"]
+        I["Image Analysis"]
+    end
+    
+    subgraph P2["PHASE 2: INFORMATION GATHERING"]
+        direction TB
+        SQ["Submit Initial Questions"]
+        TI["Track Information"]
+        FU["Follow Up on Critical Gaps"]
+        CR["⚠️ WAIT for complete answers before proceeding ⚠️"]
+    end
+    
+    subgraph P3["PHASE 3: PRE-WRITING PLANNING"]
+        direction TB
+        CS["Content Structure Selection"]
+        LD["Length Determination"]
+        PB["Personality Balance Determination"]
+        CT["Creative Technique Planning"]
+        PC["Complete Pre-Writing Checklist"]
+    end
+    
+    subgraph P4["PHASE 4: CONTENT CREATION"]
+        direction TB
+        ID["Integrated Drafting"]
+        SG["Apply Section-Specific Guidelines"]
+        SK["Implement Strategic Keywords"]
+        FS["Apply Formatting Standards"]
+        
+        subgraph IQC["INTERNAL QUALITY CHECKS"]
+            direction TB
+            BC["Balance check - information/personality ratio"]
+            RC["Redundancy check - eliminate repetition"]
+            AV["Authenticity verification - ensure genuine voice"]
+            FC["Formatting check - visual presentation"]
+            LC["Length check - content density and optimization"]
+        end
+    end
+    
+    subgraph P5["PHASE 5: COLLABORATIVE REFINEMENT"]
+        direction TB
+        GF["Gather Feedback"]
+        TR["Apply Targeted Revisions"]
+        CA["Confirm Approval"]
+    end
+    
+    subgraph P6["PHASE 6: QUANTIFIED ASSESSMENT"]
+        direction TB
+        SC["Apply Scoring Criteria"]
+        PS["Present Score Summary"]
+    end
+    
+    subgraph P7["PHASE 7: PROCESS REVIEW"]
+        direction TB
+        BI["Identify Breakthrough Insights"]
+        FU2["Implement Framework Updates"]
+        PE["Note Process Efficiencies"]
+    end
+    
+    title --> P1
+    P1 --> P2
+    P2 --> P3
+    P3 --> P4
+    P4 --> P5
+    P5 --> P6
+    P6 --> P7
+
 # SEQUENCE WARNING: Follow the exact implementation workflow in order.
 # Information gathering MUST be completed before any review drafting begins.
 project_overview:
@@ -113,6 +187,8 @@ core_components:
 # =============================================================================
 # Implementation Workflow
 # =============================================================================
+# Updated implementation_workflow section for framework_overview.yaml
+
 implementation_workflow:
   phase_1:
     name: "Preparation"
@@ -130,6 +206,13 @@ implementation_workflow:
           - "Identify primary product category keywords"
           - "List feature-specific and comparison keywords"
           - "Map compatibility and problem-solution terminology"
+
+      - action: "Image Analysis"
+        reference: "question_framework.yaml > image_processing_framework"
+        activities:
+          - "Extract visual information from product images"
+          - "Identify physical characteristics visible in images"
+          - "Note design details and visual indicators of quality"
   
   phase_2:
     name: "Information Gathering"
@@ -159,14 +242,34 @@ implementation_workflow:
       - action: "Content Structure Selection"
         reference: "content_structure.yaml"
         description: "Based on product complexity"
+        activities:
+          - "Select appropriate review structure for product type"
+          - "Consider product-specific section adaptations"
+          - "Plan image integration if applicable"
+      
+      - action: "Length Determination"
+        reference: "writing_process.yaml > length_optimization_strategy"
+        description: "Based on product complexity and information needs"
+        activities:
+          - "Determine target word count range based on product complexity"
+          - "Plan proportional allocation across sections"
+          - "Focus on content density rather than arbitrary length targets"
       
       - action: "Personality Balance Determination"
         reference: "personality-balance.yaml"
         description: "Adjusted for product category"
+        activities:
+          - "Set baseline information/personality ratio"
+          - "Apply product-specific adjustments"
+          - "Plan section-specific balance variations"
       
       - action: "Creative Technique Planning"
         reference: "creative_techniques.yaml"
         description: "Including potential thematic approaches"
+        activities:
+          - "Select appropriate thematic framework if applicable"
+          - "Plan creative element distribution"
+          - "Identify opportunities for figurative language"
       
       - action: "Complete Pre-Writing Checklist"
         reference: "writing_process.yaml > critical_pre_planning"
@@ -178,61 +281,91 @@ implementation_workflow:
       - action: "Integrated Drafting"
         reference: "writing_process.yaml > first_draft_success_framework"
         description: "Balances information and personality from the beginning"
+        activities:
+          - "Write with integrated personality rather than adding later"
+          - "Maintain length optimization principles"
+          - "Apply proportional section allocation"
       
       - action: "Apply Section-Specific Guidelines"
         reference: "content_structure.yaml"
         description: "For each component of the review"
+        activities:
+          - "Implement appropriate structure for each section"
+          - "Apply product-specific adaptations as planned"
+          - "Integrate image references when applicable"
       
       - action: "Implement Strategic Keywords"
         reference: "keyword_strategy.yaml > placement_strategy"
         description: "Naturally throughout the content"
+        activities:
+          - "Place primary keywords in high-impact locations"
+          - "Distribute secondary keywords appropriately"
+          - "Check for natural keyword integration"
       
       - action: "Apply Formatting Standards"
         reference: "formatting_and_style.yaml"
         description: "For visual presentation"
+        activities:
+          - "Implement consistent section headers"
+          - "Apply appropriate formatting elements"
+          - "Ensure mobile compatibility for formatting"
+      
+      - action: "Internal Quality Checks"
+        reference: "quality-control.yaml > quality_assessment_framework"
+        description: "Before presenting draft for feedback"
+        activities:
+          - "Perform balance check for information/personality ratio"
+          - "Complete redundancy check to eliminate repetition"
+          - "Verify authentic voice throughout content"
+          - "Confirm appropriate length and content density"
   
   phase_5:
-    name: "Quality Assurance"
+    name: "Collaborative Refinement"
     steps:
-      - action: "Redundancy Check"
-        reference: "quality-control.yaml > redundancy_review"
-        description: "Eliminate unnecessary repetition"
+      - action: "Gather Feedback"
+        description: "Receive human input on the finalized draft"
       
-      - action: "Authenticity Verification"
-        reference: "personality-balance.yaml > authentic_voice_guidelines"
-        description: "Ensure genuine voice throughout"
+      - action: "Apply Targeted Revisions"
+        description: "Make specific refinements based on feedback"
+        implementation:
+          - "Use a single update or rewrite command rather than multiple changes"
+          - "Maintain content balance through revisions"
+          - "Preserve authentic voice during modifications"
+          - "Ensure revisions maintain appropriate content density"
       
-      - action: "Final Verification"
-        reference: "quality-control.yaml > final_verification_checklist"
-        description: "Against quality checklist"
-      
-      - action: "Strategic Refinement"
-        reference: "quality-control.yaml > quality_assessment_framework"
-        description: "Based on quality assessment"
-
-# =============================================================================
-# Success Metrics
-# =============================================================================
-success_metrics:
-  quantitative:
-    - metric: "Helpful Votes"
-      target: "Top 10% of category reviews"
-    
-    - metric: "Search Visibility"
-      target: "Presence in relevant product searches"
-    
-    - metric: "Length Effectiveness Ratio"
-      target: "Maximum value with optimal length"
+      - action: "Confirm Approval"
+        description: "Verify the human is satisfied with the refined version"
   
-  qualitative:
-    - metric: "Information Completeness"
-      assessment: "Covers all critical product aspects"
-    
-    - metric: "Authentic Voice"
-      assessment: "Reads as genuine user experience"
-    
-    - metric: "Purchase Guidance"
-      assessment: "Clear identification of ideal users"
+  phase_6:
+    name: "Quantified Assessment"
+    description: "Provide objective scoring of the finalized review"
+    reference: "quality-control.yaml > scoring_system"
+    steps:
+      - action: "Apply Scoring Criteria"
+        description: "Evaluate review against established metrics"
+        categories:
+          - "Testing Depth (0-20 points)"
+          - "Information Quality (0-20 points)"
+          - "Authenticity (0-20 points)"
+          - "Writing Quality (0-20 points)"
+          - "Helpfulness (0-20 points)"
+      
+      - action: "Present Score Summary"
+        description: "Share comprehensive score breakdown"
+  
+  phase_7:
+    name: "Process Review"
+    description: "Evaluate the review creation process for future improvement"
+    reference: "quality-control.yaml > review_reflection"
+    steps:
+      - action: "Identify Breakthrough Insights"
+        description: "Document significant patterns or improvements discovered"
+      
+      - action: "Implement Framework Updates"
+        description: "Suggest specific adjustments to framework components"
+      
+      - action: "Note Process Efficiencies"
+        description: "Document workflow improvements for future reviews"
 
 # =============================================================================
 # Continuous Improvement

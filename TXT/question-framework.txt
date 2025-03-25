@@ -39,6 +39,95 @@ question_framework:
         - "Ask about specific incidents that reveal product characteristics"
         - "Probe for emotionally resonant experiences with the product"
         - "Seek information about how the product affected daily routines"
+        
+proactive_questioning_techniques:
+  description: "Strategies and examples for using questions to anticipate reader needs and structure the review."
+  
+  strategies:
+    - name: "Anticipating Reader Concerns"
+      description: "Formulating questions that address common purchase considerations and potential pain points."
+      examples:
+        - "For a coffee maker: 'What is the cleaning process like, and what are the long-term maintenance requirements?' (Addresses ease of use and maintenance)"
+        - "For a Bluetooth speaker: 'How is the sound quality at different volume levels, and what is the range and stability of the connection?' (Addresses performance and connectivity)"
+    
+    - name: "Structuring the Review with Questions"
+      description: "Using questions to guide the flow and organization of the review content."
+      examples:
+        - "To structure a section on features: 'What are the key features of this product, and how do they compare to competing products?'"
+        - "To structure a section on performance: 'How did this product perform in different scenarios, and what are its strengths and weaknesses?'"
+
+    - name: "Identifying Potential Limitations"
+      description: "Using the framework's gap categories to proactively identify areas where clarification is needed or limitations might exist."
+      implementation:
+        - "Use the Contextual Gaps Framework (contextual_gaps_framework) to identify potential limitations in areas such as 'Edge Case Gaps' or 'Differential Gaps'."
+        - "Formulate questions that specifically target these potential limitations."
+        - "Example: 'Under what extreme conditions (temperature, humidity, etc.) was this product tested, and what were the results?' (Targets 'Edge Case Gaps'image_analysis_strategies:
+    - name: "Gathering Key Informational Details"  # New strategy
+      description: "Proactively seeking essential information that readers commonly need across product categories."
+      examples:
+        - "For consumables (like fuel): 'What is the price per unit or quantity, and how long does a typical quantity last under normal usage conditions?'"
+        - "For electronics: 'What are the key specifications (e.g., battery life, processing speed, storage capacity), and how do they compare to competing models in the same price range?'"
+        - "For apparel: 'What are the sizing details, material composition, and care instructions, and how does the fit compare to standard sizing?'"
+      emphasis: "It is important to use this framework to proactively identify potential limitations and areas requiring clarification to ensure a comprehensive and helpful review. This includes gathering key informational details like price, quantity, specifications, and usage duration, depending on the product category."
+=============================================================================
+# Image Processing Framework
+# =============================================================================
+
+description: "Framework for extracting valuable information from product images and photos" 
+analysis_categories:
+  - name: "Physical Characteristics"
+    description: "Visual assessment of product dimensions, materials, and build quality"
+    questions:
+      - "What are the visible dimensions and proportions relative to common objects in the images?"
+      - "What materials and finishes are identifiable from close-up shots?"
+      - "Are there any visible quality indicators in the construction or assembly?"
+  
+  - name: "Usage Context"
+    description: "Understanding how and where the product is used"
+    questions:
+      - "What environmental context is shown in product usage photos?"
+      - "How does the product interact with or fit into its intended space?"
+      - "What complementary items or accessories are shown being used with the product?"
+  
+  - name: "Design Details"
+    description: "Specific design elements and features visible in images"
+    questions:
+      - "What control interfaces or adjustment mechanisms are visible?"
+      - "How are different components arranged or connected?"
+      - "What design choices are evident in the product's aesthetics?"
+
+visual_verification_checklist:
+  - category: "Size and Scale"
+    elements:
+      - "Compare to standard objects in frame"
+      - "Look for measurement references"
+      - "Note relative proportions of components"
+  
+  - category: "Quality Indicators"
+    elements:
+      - "Surface finish consistency"
+      - "Alignment of parts and seams"
+      - "Material quality indicators"
+  
+  - category: "Functional Elements"
+    elements:
+      - "Identify all visible controls and interfaces"
+      - "Note accessibility of common adjustment points"
+      - "Examine connection points and ports"
+
+implementation_guidance:
+  - "Always cross-reference image observations with provided specifications"
+  - "Use image analysis to verify or challenge written claims"
+  - "Document any discrepancies between images and product descriptions"
+  - "Look for unintentional revelations in background or context of images"
+  - "Consider both official product photos and customer-submitted images"
+
+red_flags_checklist:
+  - "Inconsistent scaling across different images"
+  - "Missing or obscured important product features"
+  - "Artificially enhanced or modified product appearance"
+  - "Misleading context or usage scenarios"
+  - "Lack of detail in critical areas"
 
 # =============================================================================
 # Contextual Gaps Framework

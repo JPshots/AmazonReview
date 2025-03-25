@@ -1,56 +1,23 @@
 # formatting_and_style.yaml
-# Framework for visual presentation and styling of Amazon reviews
+# Guidelines for creating visually structured reviews that comply with Amazon's formatting restrictions
 
 # =============================================================================
 # Core Formatting Principles
 # =============================================================================
 core_principles:
-  description: "Fundamental guidelines for visual formatting of reviews"
+  description: "Amazon-compliant formatting guidelines that avoid special characters"
   principles:
-    - "Use consistent formatting elements to create a recognizable personal style"
-    - "Apply formatting to enhance readability and scannability"
-    - "Use visual elements strategically to highlight key information"
-    - "Balance creativity with clarity in visual presentation"
-    - "Maintain consistent formatting across all reviews"
-
-# =============================================================================
-# Text Characteristics
-# =============================================================================
-text_characteristics:
-  description: "Essential text qualities that enhance readability and engagement"
-  
-  key_characteristics:
-    - "Brief, scannable paragraphs (3-5 sentences)"
-    - "Clear section headers in ALL CAPS"
-    - "Specific details (prices, measurements, dimensions)"
-    - "Balance of entertainment and helpfulness"
-    - "Authentic conversational tone"
-    - "Strategic use of lists for scannability"
-    - "Variety in sentence structure and length"
-  
-  readability_principles:
-    - "Prioritize clarity over complexity"
-    - "Vary sentence length to maintain reader interest"
-    - "Use short paragraphs to enhance scannability"
-    - "Place most important information at the beginning of paragraphs"
-    - "Use transitional phrases between sections for smooth flow"
-  
-  listicle_enhancement:
-    description: "Guidelines for creating effective, personalized list items"
-    principles:
-      - "Add personality to 30-40% of list items"
-      - "Always place factual content first, personality second"
-      - "Enhance the most distinctive or important features"
-      - "Ensure enhancement complements rather than competes with core information"
-    example:
-      basic: "Clear progress indicators for each battery position"
-      enhanced: "Clear progress indicators for each battery position (no cryptic blinking patterns to decipher)"
+    - "Use standard keyboard characters to create visual structure"
+    - "Avoid special characters that might trigger Amazon's algorithms"
+    - "Create consistent visual patterns for improved scannability"
+    - "Maintain clear section organization while working within Amazon's limitations"
+    - "Focus on content quality rather than elaborate formatting"
 
 # =============================================================================
 # Title and Header Formatting
 # =============================================================================
 title_header_formatting:
-  description: "Strategic formatting for titles and headers to enhance visibility and organization"
+  description: "Amazon-compliant formatting for titles and headers"
   
   amazon_title:
     description: "Short, benefit-focused title that appears in Amazon search results"
@@ -65,80 +32,83 @@ title_header_formatting:
       - "Color-Coding Fixed My Lens Confusion!"
   
   review_body_header:
-    description: "More creative header for the body of the review that minimizes vertical space"
+    description: "More creative header for the body of the review"
     guidelines:
       - "Can be longer and more descriptive than Amazon title"
-      - "Try to keep under 100-150 characters to ensure it fits on one line"
       - "Should expand on the main benefit with more detail"
-      - "Uses decorative formatting that takes minimal vertical space"
+      - "Uses Amazon-compliant formatting that takes minimal vertical space"
       - "Should complement the review's overall theme"
+      - "Split longer titles into title/subtitle format for better mobile display"
     formatting_options:
-      - name: "Gradient Border"
-        format: "▓▒░ [YOUR HEADLINE HERE] ░▒▓"
+      - name: "Mobile-Friendly Title Format"
+        format: "********** [MAIN TITLE] **********\n[SUBTITLE OR DESCRIPTION]"
         recommended: true
-      - name: "Arrow Format"
-        format: "◄◄◄ [YOUR HEADLINE HERE] ►►►"
+      - name: "Simple Underline"
+        format: "[YOUR HEADLINE HERE]\n------------------"
         recommended: true
     examples:
-      - "▓▒░ Tales from a Kitchen Lab: The 3oz Glass Measuring Cup Chronicles ░▒▓"
-      - "◄◄◄ When Baby Vitamin D Drops Become Rocket Science ►►►"
+      - "********** Tales from a Kitchen Lab **********\nThe 3oz Glass Measuring Cup Chronicles"
+      - "********** Baby Vitamin D Drops **********\nWhen Simple Nutrition Becomes Rocket Science"
   
   section_headers:
-    description: "Using symbols and ALL CAPS to enhance section visibility"
-    formatting: "ALL CAPS with symbol prefix"
+    description: "Using ALL CAPS and simple prefixes to enhance section visibility"
+    formatting: "ALL CAPS with optional standard character prefix"
     options:
-      - "► THE VERDICT"
-      - "■ DETAILS & SPECS"
-      - "✓ PROS"
-      - "✗ CONS"
-      - "※ TIPS & ADVICE"
-      - "☞ PERFECT FOR"
-      - "☜ NOT IDEAL FOR"
-    implementation: "Place symbol directly before section header text in ALL CAPS"
+      - ">> THE VERDICT"
+      - "** DETAILS & SPECS"
+      - "-- PROS"
+      - "-- CONS"
+      - "*** TIPS & ADVICE"
+      - ">> PERFECT FOR"
+      - ">> NOT IDEAL FOR"
+    implementation: "Place prefix directly before section header text in ALL CAPS"
     examples:
-      - "► THE DAILY EXPERIMENTS"
-      - "■ THE SPECS"
-      - "✓ PROS"
-      - "✗ CONS"
-      - "※ FIELD NOTES"
-      - "☞ THE PRECISION SEEKERS"
-      - "☜ NOT FOR THE CAREFREE COOK"
+      - ">> THE DAILY EXPERIMENTS"
+      - "** THE SPECS"
+      - "-- PROS"
+      - "-- CONS"
+      - "*** FIELD NOTES"
+      - ">> THE PRECISION SEEKERS"
+      - ">> NOT FOR THE CAREFREE COOK"
 
 # =============================================================================
 # Visual Elements and Dividers
 # =============================================================================
 visual_elements:
-  description: "Decorative and functional visual elements that enhance review structure"
+  description: "Amazon-compliant visual elements that enhance review structure"
   
   section_dividers:
-    description: "Using horizontal lines and decorative elements to separate sections"
+    description: "Using standard characters to create horizontal lines separating sections"
     options:
-      - "──────────────────────────────"
-      - "════════════════════════════════"
-      - "• • • • • • • • • • • • • • • • •"
-      - "◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆ ◇ ◆"
-      - "┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄"
-    implementation: "Place between major sections to create visual breaks"
+      - "---------------"
+      - "==============="
+      - "* * * * * * * *"
+      - "- - - - - - - -"
+      - "_______________"
+    implementation: "Place between major sections to create visual breaks, using 15 characters maximum for mobile compatibility"
+    usage_guidance:
+      - "Use dividers strategically at major transition points, not between every section"
+      - "Place dividers after the introduction and before the conclusion"
+      - "Keep dividers to 15 characters maximum to prevent wrapping on mobile devices"
   
   attention_markers:
-    description: "Using symbols to highlight key information"
+    description: "Using standard characters to highlight key information"
     options:
-      - "► BOTTOM LINE: [concise verdict]"
-      - "⇒ QUICK TAKE: [brief summary]"
-      - "☛ NOTE: [important information]"
+      - ">> BOTTOM LINE: [concise verdict]"
+      - "=> QUICK TAKE: [brief summary]"
+      - "** NOTE: [important information]"
     implementation: "Use sparingly for truly important points"
   
   symbol_selection:
     principles:
-      - "Select symbols that render consistently across platforms"
-      - "Choose symbols that visually relate to their function"
-      - "Use symbols consistently across all your reviews"
-      - "Test symbols on multiple devices before standardizing"
+      - "Limit formatting to standard keyboard characters (*, -, =, >, etc.)"
+      - "Maintain consistent symbols throughout the review"
+      - "Avoid unusual Unicode characters that might trigger flags"
+      - "Use symbols that have clear visual purpose"
     common_symbols:
-      section_indicators: "►■✓✗※☞☜"
-      attention_markers: "⇒☛⚠️"
-      decorative_elements: "▓▒░◄►◆◇•┄═"
-    compatibility_note: "Prioritize widely supported Unicode symbols to ensure consistent display across devices"
+      section_indicators: ">> ** -- =="
+      attention_markers: "=> ** !!"
+      decorative_elements: "* - = +"
 
 # =============================================================================
 # Paragraph and List Formatting
@@ -154,136 +124,27 @@ content_formatting:
       - "Use single-sentence paragraphs sparingly for emphasis"
       - "Include specific details (measurements, prices) in appropriate paragraphs"
     example: |
-      I heard the *clink* from the next room - that all-too-familiar sound of glass meeting hardwood. Standard glass-breakage scenario initiated: broom deployment, dustpan maneuvers, followed by tactical tweezer operations for rogue foot-shard extraction. Unlike our nearly indestructible glass baby bottles that laugh in the face of gravity, one of our $9 duo chose a more... theatrical exit.
+      I heard the clink from the next room - that all-too-familiar sound of glass meeting hardwood. Standard glass-breakage scenario initiated: broom deployment, dustpan maneuvers, followed by tactical tweezer operations for rogue foot-shard extraction. Unlike our nearly indestructible glass baby bottles that laugh in the face of gravity, one of our $9 duo chose a more... theatrical exit.
   
   lists:
     guidelines:
-      - "Use bullet points (-, •) for unordered lists"
-      - "Use checkmarks (✓) for positive points, X (✗) for negative points"
+      - "Use asterisks (*) for positive points in lists"
+      - "Use hyphens (-) for negative points or alternative list items"
       - "Keep list items concise and scannable"
       - "Start list items with strong action verbs or key facts when possible"
       - "Apply the 30-40% personality enhancement rule selectively"
       - "Group related items together for logical flow"
     example: |
-      ✓ PROS
-      - Perfect size between bulky measuring cups and tiny shot glasses
-      - Speaks both metric and imperial (sophisticated!)
-      - Pour spout that actually works
-      - Ideal for coffee precision and popcorn science
+      PROS:
+      * Perfect size between bulky measuring cups and tiny shot glasses
+      * Speaks both metric and imperial (sophisticated!)
+      * Pour spout that actually works
+      * Ideal for coffee precision and popcorn science
 
-      ✗ CONS
+      CONS:
       - Fragile as my ego after someone criticizes my coffee technique
       - Glass thickness suggests it was designed for a gentler universe
       - Advertised as 3oz, but highest marking is 2.5oz (though there's bonus space above)
-
-# =============================================================================
-# Thematic Section Headers
-# =============================================================================
-thematic_formatting:
-  description: "Creating cohesive thematic formatting throughout reviews"
-  
-  principles:
-    - "Section titles should reflect both function and theme"
-    - "Maintain consistent symbol and formatting conventions across themed sections"
-    - "Ensure thematic headings still clearly communicate section purpose"
-    - "Use ALL CAPS format for all section headers regardless of theme"
-  
-  example_themes:
-    - theme: "Kitchen Science Lab"
-      sections:
-        - functional: "Experiential"
-          themed: "► THE DAILY EXPERIMENTS"
-        - functional: "Evaluation"
-          themed: "■ LABORATORY OBSERVATIONS"
-        - functional: "Practical"
-          themed: "※ FIELD NOTES"
-        - functional: "Conclusion"
-          themed: "► RESEARCH CONCLUSIONS"
-    
-    - theme: "Adventure/Expedition"
-      sections:
-        - functional: "Experiential"
-          themed: "► THE JOURNEY"
-        - functional: "Evaluation"
-          themed: "■ TRAIL MARKERS"
-        - functional: "Practical"
-          themed: "※ SURVIVAL TACTICS"
-        - functional: "Conclusion"
-          themed: "► EXPEDITION REPORT"
-  
-  implementation_guidance:
-    - "Maintain symbol consistency across all section headers"
-    - "Ensure thematic section names are immediately understandable"
-    - "Use themed headers consistently throughout the entire review"
-    - "Consider how the full set of headers works together visually"
-
-# =============================================================================
-# Style Personalization
-# =============================================================================
-style_personalization:
-  description: "Guidelines for developing a personal formatting style across reviews"
-  
-  signature_elements:
-    description: "Creating consistent personal branding elements"
-    recommendations:
-      - "Select 3-5 consistent formatting techniques for all your reviews"
-      - "Use the same header decoration style across reviews"
-      - "Maintain consistent section header symbols"
-      - "Develop signature introduction and conclusion patterns"
-    rationale: "Consistent formatting creates recognition and personal branding across multiple reviews"
-  
-  adaptation_guidance:
-    - "While maintaining core elements, adapt formatting to fit product categories"
-    - "Technical products may benefit from more structured formatting"
-    - "Lifestyle products may support more creative formatting approaches"
-    - "Adjust visual density based on information complexity"
-    - "Ensure formatting enhances rather than distracts from content"
-  
-  implementation_process:
-    - "Experiment with formatting options to find your personal style"
-    - "Test selected formats across multiple device types"
-    - "Create a personal template with your selected formatting conventions"
-    - "Apply consistent formatting across multiple reviews"
-    - "Refine based on user engagement and feedback"
-
-# =============================================================================
-# Effectiveness Principles
-# =============================================================================
-effectiveness_principles:
-  description: "Core principles that make formatting truly effective"
-  
-  principles:
-    - name: "Visual Hierarchy"
-      description: "Creating clear visual importance levels"
-      implementation:
-        - "Use largest formatting (headers) for most important sections"
-        - "Apply mid-level formatting (subheaders) for secondary elements"
-        - "Use subtle formatting for tertiary elements"
-      rationale: "Helps readers quickly identify and navigate to relevant information"
-    
-    - name: "Consistency"
-      description: "Maintaining predictable formatting patterns"
-      implementation:
-        - "Use the same formatting for the same purpose throughout"
-        - "Apply consistent symbol usage across all reviews"
-        - "Maintain regular section order when possible"
-      rationale: "Creates familiarity and ease of navigation for readers"
-    
-    - name: "Minimalism"
-      description: "Using formatting judiciously for maximum impact"
-      implementation:
-        - "Limit decorative elements to essential locations"
-        - "Avoid multiple attention-grabbing elements in close proximity"
-        - "Choose fewer, more impactful formatting techniques"
-      rationale: "Prevents visual noise that distracts from content value"
-    
-    - name: "Functionality"
-      description: "Ensuring formatting serves specific purposes"
-      implementation:
-        - "Each formatting choice should solve a specific readability problem"
-        - "Decorative elements should enhance rather than hinder information processing"
-        - "Test whether formatting improves content accessibility"
-      rationale: "Keeps formatting focused on enhancing user experience"
 
 # =============================================================================
 # Baseline Example
@@ -291,41 +152,44 @@ effectiveness_principles:
 baseline_example:
   title: "Tales from a Kitchen Lab: The 3oz Glass Measuring Cup Chronicles"
   content: |
-    ▓▒░ Tales from a Kitchen Lab: The 3oz Glass Measuring Cup Chronicles ░▒▓
+    ********** Tales from a Kitchen Lab **********
+    The 3oz Glass Measuring Cup Chronicles
     
-    I heard the *clink* from the next room - that all-too-familiar sound of glass meeting hardwood. Standard glass-breakage scenario initiated: broom deployment, dustpan maneuvers, followed by tactical tweezer operations for rogue foot-shard extraction. Unlike our nearly indestructible glass baby bottles that laugh in the face of gravity, one of our $9 duo chose a more... theatrical exit.
+    I heard the clink from the next room - that all-too-familiar sound of glass meeting hardwood. Standard glass-breakage scenario initiated: broom deployment, dustpan maneuvers, followed by tactical tweezer operations for rogue foot-shard extraction. Unlike our nearly indestructible glass baby bottles that laugh in the face of gravity, one of our $9 duo chose a more... theatrical exit.
     
-    ► THE DAILY EXPERIMENTS
+    ---------------
+    >> THE DAILY EXPERIMENTS
     The surviving cup found its calling under my espresso machine. That pour spout? Actually understands fluid dynamics - directing my precious caffeine without the usual counter splatter. But here's the real discovery: fill one past the final 70ml marking (yes, ALL the way up), and you've got the perfect kernel load for a Chinese popcorn cannon. (Yes, that's a real thing, and yes, it's as awesome as it sounds.)
     
-    ■ THE SPECS
-    ✓ PROS
-    - Perfect size between bulky measuring cups and tiny shot glasses
-    - Speaks both metric and imperial (sophisticated!)
-    - Pour spout that actually works
-    - Ideal for coffee precision and popcorn science
+    ** THE SPECS
+    -- PROS
+    * Perfect size between bulky measuring cups and tiny shot glasses
+    * Speaks both metric and imperial (sophisticated!)
+    * Pour spout that actually works
+    * Ideal for coffee precision and popcorn science
     
-    ✗ CONS
+    -- CONS
     - Fragile as my ego after someone criticizes my coffee technique
     - Glass thickness suggests it was designed for a gentler universe
     - Advertised as 3oz, but highest marking is 2.5oz (though there's bonus space above)
     
-    ☞ THE PRECISION SEEKERS:
-    - Coffee enthusiasts needing precise measurements for pour-overs or espresso shots
-    - Recipe developers working with small amounts of ingredients
-    - Mixologists crafting cocktails requiring exact measurements
-    - Detail-oriented cooks who get frustrated with "eyeballing" small quantities
+    >> THE PRECISION SEEKERS:
+    * Coffee enthusiasts needing precise measurements for pour-overs or espresso shots
+    * Recipe developers working with small amounts of ingredients
+    * Mixologists crafting cocktails requiring exact measurements
+    * Detail-oriented cooks who get frustrated with "eyeballing" small quantities
     
-    ☜ NOT FOR THE CAREFREE COOK:
+    >> NOT FOR THE CAREFREE COOK:
     - Households with young kids (fragile glass)
     - Anyone cooking primarily large-batch recipes where precision is less critical
     
-    ※ FIELD NOTES
-    - Keep the box for storage - these aren't drawer-rummaging tools
-    - Perfect for pour-over coffee measurements
-    - Use with a scale for ultimate kitchen science
+    *** FIELD NOTES
+    * Keep the box for storage - these aren't drawer-rummaging tools
+    * Perfect for pour-over coffee measurements
+    * Use with a scale for ultimate kitchen science
     
-    ► RESEARCH CONCLUSIONS
+    ---------------
+    >> RESEARCH CONCLUSIONS
     At $9 for two, they're solid tools for kitchen precision - just maybe keep one in a protective bunker as backup. Perfect for coffee enthusiasts, careful measurers, and anyone who's muttered "but how much is a 'splash' exactly?" while cooking.
 
 # =============================================================================
@@ -335,16 +199,16 @@ mobile_considerations:
   description: "Special formatting considerations for mobile device readability"
   
   guidelines:
-    - "Test all symbols and characters on mobile devices before standardizing"
+    - "Test text-based formatting on mobile devices before standardizing"
     - "Use line breaks strategically for mobile reading"
-    - "Ensure section headers are immediately visible without horizontal scrolling"
+    - "Ensure section headers are immediately visible without scrolling"
     - "Favor shorter paragraphs (2-3 sentences) for mobile readability"
     - "Use consistent spacing for improved mobile scannability"
   
   mobile_specific_adjustments:
     - "Avoid extremely wide decorative elements that might wrap awkwardly"
     - "Use dividers that display well at narrower widths"
-    - "Ensure symbols render properly on both iOS and Android devices"
+    - "Keep section prefixes brief for better mobile display"
     - "Test formatting on multiple screen sizes for optimal display"
   
   implementation_guidance:

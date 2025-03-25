@@ -34,8 +34,8 @@ review_structure:
         - "Should expand on the main benefit with more detail"
         - "Uses decorative formatting that takes minimal vertical space"
       examples:
-        - "▓▒░ Tales from a Kitchen Lab: The 3oz Glass Measuring Cup Chronicles ░▒▓"
-        - "◄◄◄ When Baby Vitamin D Drops Become Rocket Science ►►►"
+        - "********** Tales from a Kitchen Lab **********\nThe 3oz Glass Measuring Cup Chronicles"
+        - "********** Baby Vitamin D Drops **********\nWhen Simple Nutrition Becomes Rocket Science"
     
     - name: "openingNarrative"
       required: true
@@ -141,14 +141,14 @@ section_naming:
   formatting_standards:
     format: "ALL CAPS with symbol prefix"
     examples:
-      - "► THE VERDICT"
-      - "■ THE SPECS"
-      - "✓ PROS"
-      - "✗ CONS"
-      - "※ TIPS & ADVICE"
-      - "☞ PERFECT FOR"
-      - "☜ NOT IDEAL FOR"
-    implementation: "Place symbol directly before section header text in ALL CAPS"
+      - ">> THE VERDICT"
+      - "** THE SPECS"
+      - "-- PROS"
+      - "-- CONS"
+      - "*** TIPS & ADVICE"
+      - ">> PERFECT FOR"
+      - ">> NOT IDEAL FOR"
+    implementation: "Place prefix directly before section header text in ALL CAPS"
   
   section_name_options:
     experiential_sections:
@@ -338,50 +338,89 @@ product_specific_sections:
     - "Use specialized vocabulary where appropriate but explain terms when necessary"
 
 # =============================================================================
+# Image Integration Guidelines
+# =============================================================================
+image_integration:
+  description: "Framework for effectively incorporating and referencing images in review content"
+  
+  reference_principles:
+    - name: "Specificity"
+      description: "Direct references to visual details in images"
+      examples:
+        - "As shown in image 2, the textured grip pattern extends 3 inches along the handle"
+        - "Note the size comparison with a quarter in image 1 for scale"
+    
+    - name: "Context Enhancement"
+      description: "Use images to strengthen written points"
+      examples:
+        - "The slight discoloration visible in image 3 demonstrates the wear pattern"
+        - "Image 4 highlights the seamless connection points discussed above"
+  
+  integration_workflow:
+    - step: "Pre-writing Image Planning"
+      actions:
+        - "Identify key visual elements requiring documentation"
+        - "Plan image sequence to support review flow"
+        - "List specific details to highlight in each image"
+    
+    - step: "Content Synchronization"
+      actions:
+        - "Reference images near relevant text sections"
+        - "Use consistent image numbering throughout"
+
+# =============================================================================
 # Baseline Example
 # =============================================================================
 baseline_example:
   title: "Tales from a Kitchen Lab: The 3oz Glass Measuring Cup Chronicles"
   structure:
     opening_hook: |
-      I heard the *clink* from the next room - that all-too-familiar sound of glass meeting hardwood. Standard glass-breakage scenario initiated: broom deployment, dustpan maneuvers, followed by tactical tweezer operations for rogue foot-shard extraction. Unlike our nearly indestructible glass baby bottles that laugh in the face of gravity, one of our $9 duo chose a more... theatrical exit.
-    
-    daily_use: |
-      ► THE DAILY EXPERIMENTS
-      The surviving cup found its calling under my espresso machine. That pour spout? Actually understands fluid dynamics - directing my precious caffeine without the usual counter splatter. But here's the real discovery: fill one past the final 70ml marking (yes, ALL the way up), and you've got the perfect kernel load for a Chinese popcorn cannon. (Yes, that's a real thing, and yes, it's as awesome as it sounds.)
-    
-    evaluation: |
-      ■ THE SPECS
-      ✓ PROS
-      - Perfect size between bulky measuring cups and tiny shot glasses
-      - Speaks both metric and imperial (sophisticated!)
-      - Pour spout that actually works
-      - Ideal for coffee precision and popcorn science
+      ********** Tales from a Kitchen Lab **********
+      The 3oz Glass Measuring Cup Chronicles
 
-      ✗ CONS
+      I heard the clink from the next room - that all-too-familiar sound of glass meeting hardwood. Standard glass-breakage scenario initiated: broom deployment, dustpan maneuvers, followed by tactical tweezer operations for rogue foot-shard extraction. Unlike our nearly indestructible glass baby bottles that laugh in the face of gravity, one of our $9 duo chose a more... theatrical exit.
+
+      ---------------
+
+    daily_use: |
+      >> THE DAILY EXPERIMENTS
+      The surviving cup found its calling under my espresso machine. That pour spout? Actually understands fluid dynamics - directing my precious caffeine without the usual counter splatter. But here's the real discovery: fill one past the final 70ml marking (yes, ALL the way up), and you've got the perfect kernel load for a Chinese popcorn cannon. (Yes, that's a real thing, and yes, it's as awesome as it sounds.)
+
+    evaluation: |
+      ** THE SPECS
+
+      -- PROS
+      * Perfect size between bulky measuring cups and tiny shot glasses
+      * Speaks both metric and imperial (sophisticated!)
+      * Pour spout that actually works
+      * Ideal for coffee precision and popcorn science
+
+      -- CONS
       - Fragile as my ego after someone criticizes my coffee technique
       - Glass thickness suggests it was designed for a gentler universe
       - Advertised as 3oz, but highest marking is 2.5oz (though there's bonus space above)
-    
-    audience_section: |
-      ☞ THE PRECISION SEEKERS:
-      - Coffee enthusiasts needing precise measurements for pour-overs or espresso shots
-      - Recipe developers working with small amounts of ingredients
-      - Mixologists crafting cocktails requiring exact measurements
-      - Detail-oriented cooks who get frustrated with "eyeballing" small quantities
 
-      ☜ NOT FOR THE CAREFREE COOK:
+    audience_section: |
+      >> THE PRECISION SEEKERS
+      * Coffee enthusiasts needing precise measurements for pour-overs or espresso shots
+      * Recipe developers working with small amounts of ingredients
+      * Mixologists crafting cocktails requiring exact measurements
+      * Detail-oriented cooks who get frustrated with "eyeballing" small quantities
+
+      >> NOT FOR THE CAREFREE COOK
       - Households with young kids (fragile glass)
       - Anyone cooking primarily large-batch recipes where precision is less critical
-    
+
     practical_notes: |
-      ※ FIELD NOTES
-      - Keep the box for storage - these aren't drawer-rummaging tools
-      - Perfect for pour-over coffee measurements
-      - Use with a scale for ultimate kitchen science
-    
+      *** FIELD NOTES
+      * Keep the box for storage - these aren't drawer-rummaging tools
+      * Perfect for pour-over coffee measurements
+      * Use with a scale for ultimate kitchen science
+
+      ---------------
+
     verdict: |
-      ► RESEARCH CONCLUSIONS
+      >> RESEARCH CONCLUSIONS
       At $9 for two, they're solid tools for kitchen precision - just maybe keep one in a protective bunker as backup. Perfect for coffee enthusiasts, careful measurers, and anyone who's muttered "but how much is a 'splash' exactly?" while cooking.
 
 # =============================================================================
