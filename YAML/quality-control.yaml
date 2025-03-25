@@ -499,6 +499,13 @@ final_verification_checklist:
   description: "Final quality check to ensure all requirements are met before submission"
   
   sections:
+    - name: "Image Information Verification"
+      items:
+        - "Visual defects or quality issues from images are addressed"
+        - "Size/scale context from images is provided in text"
+        - "Any visible usage demonstrations are described"
+        - "Product condition on arrival (as shown in images) is noted"
+
     - name: "Content Balance"
       items:
         - "Information/personality ratio matches pre-planned allocations"
@@ -545,3 +552,17 @@ framework_relationships:
   
   - component: "creative_techniques.yaml"
     relationship: "Quality control ensures creative elements enhance rather than detract from review value"
+
+# =============================================================================
+# Evaluation Examples
+# =============================================================================
+evaluation_examples:
+  - name: "Section Headers"
+    before: "☞ PERFECT FOR / ☜ NOT IDEAL FOR"
+    after: ">> PERFECT FOR / << NOT IDEAL FOR"
+  - name: "List Markers"
+    before: "✓ Excellent battery life / ✗ Heavy when filled"
+    after: "+ Excellent battery life / - Heavy when filled"
+  - name: "Dividers"
+    before: "▓▒░ Review Title ░▒▓"
+    after: "********** Review Title **********"

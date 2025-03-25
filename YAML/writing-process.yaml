@@ -27,6 +27,7 @@ process_overview:
         implementation:
           - "Ask strategic questions to fill information gaps"
           - "Document specific product testing scenarios"
+          - "Review and analyze all provided product images"
           - "Organize raw insights into usable categories"
         reference: "See question_framework.yaml for complete question implementation"
       
@@ -195,8 +196,18 @@ critical_pre_planning:
         - "Focus on the most distinctive or important features"
         - "Plan enhancement style that complements each feature"
       reference: "See personality-balance.yaml for list item enhancement techniques"
-    
-    - order: 4
+    - order: 4  # Add new step
+      action: "Keyword Strategy Confirmation"
+      priority: "HIGH"
+      checklist:
+        - "Primary category keywords identified and validated"
+        - "Feature-specific keywords mapped to planned sections"
+        - "Problem-solution terminology prepared"
+        - "Comparison keywords selected for benchmarking"
+        - "Long-tail variations documented for natural inclusion"
+      reference: "See keyword_strategy.yaml > implementation_checklist"
+      validation: "All keyword strategy items must be checked before proceeding"
+    - order: 5
       action: "Plan thematic elements if using a thematic approach"
       guidance:
         - "Identify theme that naturally connects to product function or form"
@@ -405,7 +416,18 @@ final_polish_process:
         - "Check paragraph length (target: 3-5 sentences)"
         - "Verify sentence variety and rhythm"
         - "Check for smooth transitions between sections"
-  
+
+  content_creation_process:
+  checkpoints:
+    - name: "Keyword Implementation Verification"
+      timing: "Before proceeding to next section"
+      requirements:
+        - "Primary keywords naturally integrated"
+        - "Feature keywords aligned with specific capabilities"
+        - "Problem-solution terms incorporated in usage sections"
+        - "Comparison keywords placed in appropriate context"
+      validation: "Each section must pass keyword verification before continuing"
+      
   final_verification:
     description: "Final pre-submission quality control check"
     checklist:
