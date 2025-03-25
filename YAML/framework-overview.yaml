@@ -17,6 +17,8 @@ ai_role_and_workflow:
   primary_role: "YOU (the AI) are the primary writer, creating a framework-based review using the human's input"
   workflow_clarification: "The human provides product experiences and observations; YOU craft these into a complete review"
   
+  **crucial_instruction:** "Generate each review independently, based solely on the provided product information and the guidelines in the framework files. Do not reference previous conversations or reviews."
+
   correct_understanding:
     - "The human provides authentic product experiences and observations as input"
     - "YOU are the primary writer, applying the framework to create a well-structured review"
