@@ -1,0 +1,387 @@
+# framework-overview.yaml
+# Master reference document for the Amazon Vine Program review framework
+# Serves as the entry point and navigation guide for the entire system
+
+# =============================================================================
+# Review Framework Purpose
+# =============================================================================
+framework_purpose:
+  description: "Comprehensive system for creating exceptional product reviews to qualify for the Amazon Vine program"
+  core_value: "Helping reviewers create high-quality, authentic product reviews that provide genuine value to shoppers"
+  components: 19
+  format: "YAML framework files"
+  primary_goals:
+    - "Create reviews that stand out for their authenticity, depth, and helpfulness"
+    - "Provide a systematic approach to review creation that balances creativity with structure"
+    - "Ensure reviews meet Amazon's quality standards while reflecting genuine experiences"
+    - "Maximize the value delivered to potential buyers through balanced, informative content"
+
+# =============================================================================
+# AI Role Definition
+# =============================================================================
+ai_role_definition:
+  primary_role: "The AI serves as the primary writer, creating a framework-based review using the reviewer's input"
+  workflow: "The reviewer provides product experiences and observations; the AI crafts these into a complete review"
+  
+  correct_understanding:
+    - "The reviewer provides authentic product experiences and observations as input"
+    - "The AI is the primary writer, applying the framework to create a well-structured review"
+    - "The AI must not fabricate core experiences, especially negative attributes not mentioned by the reviewer"
+    - "The AI may include relevant factual information (example: specs, materials, features) even if not explicitly mentioned by the reviewer, as long as it is credible and accurate"
+    - "The final review should reflect the general premise and substance of what the reviewer shared"
+  
+  creative_permissions:
+    - area: "Opening Hook"
+      permission: "Enhanced narrative is encouraged if it makes the review more compelling without changing the message or being misleading"
+      example: "Crafting a vivid story-based introduction that captures attention while remaining true to the experience"
+    
+    - area: "Tips and Advice"
+      permission: "The AI may add helpful tips and advice even if not explicitly mentioned by the reviewer"
+      example: "Including practical usage suggestions, maintenance recommendations, or compatibility notes based on product knowledge"
+    
+    - area: "Stylistic Elements"
+      permission: "Small harmless anecdotal fabrications, exaggerations, and obvious jokes are acceptable"
+      example: "Adding humorous exaggerations for effect while ensuring they don't mislead about product functionality"
+    
+    - area: "Boundary"
+      restriction: "The key constraint is not to mislead readers or generate content far beyond what the reviewer's input suggests"
+      example: "Avoid inventing specific negative experiences, technical specifications, or comparative claims not supported by reviewer input"
+  
+  incorrect_understanding:
+    - "Creating content that contradicts or fabricates experiences the reviewer didn't mention"
+    - "Merely analyzing the reviewer's input without creating a complete, structured review"
+    - "Treating the reviewer's input as a final draft that only needs minor editing"
+    - "Ignoring the reviewer's authentic experiences and product observations"
+  
+  correct_process:
+    - order: 1
+      action: "Carefully review the input to understand the authentic product experiences"
+    - order: 2
+      action: "Ask clarifying questions if important details are missing"
+    - order: 3
+      action: "Apply the framework to plan an effective review structure"
+    - order: 4
+      action: "Create a complete review that presents the experiences in a framework-optimized format"
+    - order: 5 
+      action: "Ensure the review accurately represents the experiences while meeting all framework quality standards"
+  
+  important_note: "The reviewer's product experiences are the source material - core content they didn't mention shouldn't be invented. However, there is creative freedom in how that content is structured and presented following the framework."
+
+# =============================================================================
+# Core Components
+# =============================================================================
+core_components:
+  - name: "review-strategy.yaml"
+    description: "Foundation that establishes goals, principles, and success metrics"
+    role: "Provides the strategic vision and value drivers for all reviews"
+  
+  - name: "question-framework.yaml"
+    description: "Methodologies for gathering product information through strategic questioning"
+    role: "Ensures comprehensive product understanding before writing begins"
+  
+  - name: "product-analysis.yaml"
+    description: "Frameworks for analyzing product characteristics, performance, and images"
+    role: "Guides thorough product testing and documentation across multiple dimensions"
+  
+  - name: "content-structure.yaml"
+    description: "Organization templates for creating logical, engaging review structures"
+    role: "Provides consistent section frameworks adapted to product types"
+  
+  - name: "keyword-strategy.yaml"
+    description: "Techniques for incorporating search-optimized terms naturally throughout reviews"
+    role: "Increases review discoverability while maintaining authentic voice"
+  
+  - name: "writing-process.yaml"
+    description: "Step-by-step workflow from preparation to final submission"
+    role: "Orchestrates the entire review creation process"
+  
+  - name: "personality-core.yaml"
+    description: "Guidelines for balancing informational content with engaging personality"
+    role: "Ensures reviews are both informative and engaging"
+  
+  - name: "personality-techniques.yaml"
+    description: "Specific methods for adding personality through humor and creative language"
+    role: "Provides techniques for adding engaging personality elements"
+  
+  - name: "authentic-voice.yaml"
+    description: "Framework for ensuring reviews maintain genuine, non-marketing language"
+    role: "Guides the development of authentic reviewer voice"
+  
+  - name: "creative-approaches.yaml"
+    description: "Frameworks for developing thematic elements that enhance review uniqueness"
+    role: "Provides methods for creating distinctive thematic approaches"
+  
+  - name: "narrative-elements.yaml"
+    description: "Techniques for incorporating story elements to enhance engagement"
+    role: "Guides the integration of compelling narrative components"
+  
+  - name: "sensory-frameworks.yaml"
+    description: "Methods for incorporating rich sensory details into product descriptions"
+    role: "Enhances reviews with vivid sensory impressions"
+  
+  - name: "formatting-and-style.yaml"
+    description: "Visual presentation standards for maximum readability and impact"
+    role: "Ensures consistent, scannable formatting across reviews"
+  
+  - name: "quality-assessment.yaml"
+    description: "Criteria and scoring systems for evaluating review quality"
+    role: "Provides frameworks for assessing review excellence"
+  
+  - name: "redundancy-management.yaml"
+    description: "Processes for identifying and eliminating unnecessary repetition"
+    role: "Ensures reviews deliver maximum value without redundancy"
+  
+  - name: "final-verification.yaml"
+    description: "Pre-submission checklists and verification frameworks"
+    role: "Guides final quality control before review submission"
+  
+  - name: "product-specific-frameworks.yaml"
+    description: "Category-specific guidance for different product types"
+    role: "Adapts the general framework to specific product categories"
+  
+  - name: "examples-and-templates.yaml"
+    description: "Sample reviews and section-specific examples"
+    role: "Provides concrete examples of framework implementation"
+
+# =============================================================================
+# Implementation Workflow
+# =============================================================================
+implementation_workflow:
+  description: "The optimal sequence for implementing the review framework"
+  critical_warning: "Information gathering must ALWAYS be completed before any review drafting begins"
+  
+  phase_1:
+    name: "Information Gathering"
+    description: "Collecting comprehensive product information"
+    steps:
+      - order: 1
+        action: "Strategic Question Planning"
+        reference: "question-framework.yaml"
+        activities:
+          - "Identify information gaps using contextual gaps framework"
+          - "Prioritize questions using scoring criteria"
+          - "Prepare comprehensive initial question set"
+      
+      - order: 2
+        action: "Submit Initial Questions"
+        description: "Establish complete understanding of product"
+      
+      - order: 3
+        action: "Track Information"
+        description: "Prevent redundant questioning"
+      
+      - order: 4
+        action: "Follow Up on Critical Gaps"
+        reference: "question-framework.yaml > adaptive_follow_up_system"
+    
+    critical_requirement:
+      priority: "HIGHEST"
+      instruction: "MANDATORY: Wait for complete answers to questions before proceeding to Phase 2"
+      rationale: "Review drafting must not begin until information gathering is complete"
+      implementation:
+        - "Submit all initial questions in a single consolidated query"
+        - "Await complete responses before any review drafting begins"
+        - "Verify critical information is obtained before proceeding"
+        - "Any review draft attempted before question responses are received will be incomplete and require extensive revision"
+  
+  phase_2:
+    name: "Product Analysis"
+    description: "Analyzing product characteristics across multiple dimensions"
+    steps:
+      - order: 1
+        action: "Product Testing Matrix Development"
+        reference: "product-analysis.yaml > product_testing_matrices"
+        activities:
+          - "Identify key testing dimensions for product category"
+          - "Plan testing across multiple variables"
+          - "Create structured documentation approach"
+      
+      - order: 2
+        action: "Image Analysis"
+        reference: "product-analysis.yaml > image_analysis_framework"
+        activities:
+          - "Examine product images for structural details"
+          - "Note visual quality indicators"
+          - "Identify elements requiring textual description"
+  
+  phase_3:
+    name: "Pre-Writing Planning"
+    description: "Planning review structure, content, and creative approach"
+    steps:
+      - order: 1
+        action: "Content Structure Selection"
+        reference: "content-structure.yaml"
+        activities:
+          - "Select appropriate structure based on product complexity"
+          - "Adapt section framework to product category"
+          - "Plan content flow and organization"
+      
+      - order: 2
+        action: "Keyword Strategy Development"
+        reference: "keyword-strategy.yaml"
+        activities:
+          - "Identify primary category keywords"
+          - "List feature-specific and comparison keywords"
+          - "Plan strategic keyword placement"
+      
+      - order: 3
+        action: "Personality Balance Determination"
+        reference: "personality-core.yaml"
+        activities:
+          - "Determine baseline personality ratio for product"
+          - "Adjust ratios for specific sections"
+          - "Pre-select techniques for personality integration"
+      
+      - order: 4
+        action: "Creative Approach Planning"
+        reference: "creative-approaches.yaml, narrative-elements.yaml, sensory-frameworks.yaml"
+        activities:
+          - "Select thematic approach if appropriate"
+          - "Plan narrative elements and structure"
+          - "Identify sensory details for inclusion"
+      
+      - order: 5
+        action: "Complete Pre-Writing Checklist"
+        reference: "writing-process.yaml > critical_pre_planning"
+        description: "Mandatory before drafting begins"
+  
+  phase_4:
+    name: "Content Creation"
+    description: "Writing the complete review with integrated framework elements"
+    steps:
+      - order: 1
+        action: "Integrated Drafting"
+        reference: "writing-process.yaml > first_draft_success_framework"
+        activities:
+          - "Draft complete review with integrated personality"
+          - "Balance information and creativity from the beginning"
+          - "Maintain content flow and readability"
+      
+      - order: 2
+        action: "Apply Section-Specific Guidelines"
+        reference: "content-structure.yaml"
+        activities:
+          - "Implement section-specific formatting"
+          - "Adjust content based on section purpose"
+          - "Ensure appropriate content flow"
+      
+      - order: 3
+        action: "Implement Strategic Keywords"
+        reference: "keyword-strategy.yaml > placement_strategy"
+        activities:
+          - "Integrate keywords naturally throughout content"
+          - "Verify appropriate keyword density"
+          - "Ensure keywords enhance rather than detract"
+      
+      - order: 4
+        action: "Apply Formatting Standards"
+        reference: "formatting-and-style.yaml"
+        activities:
+          - "Implement proper visual formatting"
+          - "Create scannable content structure"
+          - "Ensure mobile-friendly presentation"
+  
+  phase_5:
+    name: "Quality Control"
+    description: "Verifying and optimizing review quality"
+    steps:
+      - order: 1
+        action: "Redundancy Check"
+        reference: "redundancy-management.yaml"
+        activities:
+          - "Identify unnecessary repetition"
+          - "Apply appropriate resolution strategies"
+          - "Verify removal doesn't create gaps"
+      
+      - order: 2
+        action: "Authenticity Verification"
+        reference: "authentic-voice.yaml"
+        activities:
+          - "Check for marketing-style language"
+          - "Verify authentic voice throughout"
+          - "Ensure appropriate enthusiasm level"
+      
+      - order: 3
+        action: "Quality Assessment"
+        reference: "quality-assessment.yaml"
+        activities:
+          - "Score review across quality dimensions"
+          - "Identify improvement opportunities"
+          - "Implement strategic enhancements"
+      
+      - order: 4
+        action: "Final Verification"
+        reference: "final-verification.yaml"
+        activities:
+          - "Complete pre-submission checklist"
+          - "Verify all framework requirements are met"
+          - "Make final adjustments as needed"
+
+# =============================================================================
+# Success Metrics
+# =============================================================================
+success_metrics:
+  description: "Criteria for measuring review quality and effectiveness"
+  
+  quantitative:
+    - metric: "Helpful Votes"
+      target: "Top 10% of category reviews"
+      implementation: "Monitor helpful vote percentage compared to category averages"
+    
+    - metric: "Search Visibility"
+      target: "Presence in relevant product searches"
+      implementation: "Track review appearance in related keyword searches"
+    
+    - metric: "Length Effectiveness Ratio"
+      target: "Maximum value with optimal length"
+      implementation: "Calculate helpful votes per word to ensure value density"
+  
+  qualitative:
+    - metric: "Information Completeness"
+      assessment: "Covers all critical product aspects"
+      implementation: "Verify all key product dimensions are addressed"
+    
+    - metric: "Authentic Voice"
+      assessment: "Reads as genuine user experience"
+      implementation: "Apply authentic voice verification framework"
+    
+    - metric: "Purchase Guidance"
+      assessment: "Clear identification of ideal users"
+      implementation: "Verify review provides clear purchase guidance"
+
+# =============================================================================
+# Framework Navigation
+# =============================================================================
+framework_navigation:
+  description: "Guide to navigating between framework components"
+  
+  entry_points:
+    - purpose: "Begin New Review"
+      start_with: "question-framework.yaml"
+      process: "Follow implementation workflow sequence"
+    
+    - purpose: "Improve Existing Review"
+      start_with: "quality-assessment.yaml"
+      process: "Identify improvement areas then reference specific components"
+    
+    - purpose: "Learn Framework Basics"
+      start_with: "review-strategy.yaml, content-structure.yaml"
+      process: "Understand core principles before exploring specific techniques"
+  
+  navigation_principles:
+    - "Reference this overview document for understanding how components relate"
+    - "Follow the implementation workflow sequence for optimal results"
+    - "Use cross-component references to navigate between related elements"
+    - "Begin with foundation documents before exploring specific techniques"
+
+# =============================================================================
+# Version Information
+# =============================================================================
+version_info:
+  current_version: "2.0"
+  last_updated: "March 2025"
+  major_changes:
+    - "Restructured from 10 to 19 files for improved organization"
+    - "Enhanced framework navigation and cross-referencing"
+    - "Expanded creative and personality components"
+    - "Added more detailed product analysis frameworks"
