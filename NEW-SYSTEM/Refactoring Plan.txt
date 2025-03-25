@@ -1,0 +1,121 @@
+# Optimal Amazon Review Framework Structure
+
+Here's how I'd recommend restructuring the framework for optimal performance with Claude:
+
+## Core Foundation Files
+
+1. **framework-overview.yaml**
+   - System overview and entry point
+   - AI role definition
+   - Core workflow sequence
+   - Cross-component relationships
+
+2. **review-strategy.yaml**
+   - Core goals and principles
+   - Value drivers
+   - Success metrics
+
+## Information Collection & Planning
+
+3. **question-framework.yaml**
+   - Strategic questioning process
+   - Contextual gaps identification
+   - Question prioritization
+   - Information tracking
+
+4. **product-analysis.yaml** *(New)*
+   - Image analysis frameworks
+   - Technical specification analysis
+   - Product testing matrices
+   - Comparative product assessment
+
+## Content Structure & Organization
+
+5. **content-structure.yaml**
+   - Section frameworks and organization
+   - Product-specific adaptations
+   - Review structure fundamentals
+
+6. **keyword-strategy.yaml**
+   - Keyword categories and placement
+   - Implementation techniques
+   - Natural integration methods
+
+## Content Creation Components
+
+7. **writing-process.yaml**
+   - Critical pre-planning
+   - Draft creation workflow
+   - Length optimization
+   - Revision process
+
+8. **personality-core.yaml** *(Split from personality-balance)*
+   - Information/personality ratios
+   - Section-specific adjustments
+   - Front-loading principles
+   - Implementation techniques
+
+9. **personality-techniques.yaml** *(Split from personality-balance)*
+   - Humor approaches
+   - Figurative language
+   - Analogy frameworks
+   - Natural humor integration
+
+10. **authentic-voice.yaml** *(Split from personality-balance)*
+    - Authentic vs. marketing language
+    - Red flag patterns
+    - Authenticity markers
+    - Verification process
+
+11. **creative-approaches.yaml** *(Split from creative-techniques)*
+    - Thematic framework development
+    - Theme discovery
+    - Implementation approaches
+
+12. **narrative-elements.yaml** *(Split from creative-techniques)*
+    - Micro-narratives
+    - Emotional journey mapping
+    - Comparison narratives
+    - Strategic placement
+
+13. **sensory-frameworks.yaml** *(Split from creative-techniques)*
+    - Multi-sensory integration
+    - Product category priorities
+    - Sensory crafting techniques
+
+## Presentation & Quality
+
+14. **formatting-and-style.yaml**
+    - Visual formatting guidelines
+    - Title and header approaches
+    - Mobile considerations
+    - List and paragraph formatting
+
+15. **quality-assessment.yaml** *(Split from quality-control)*
+    - Assessment criteria
+    - Scoring system
+    - Content quality analysis
+
+16. **redundancy-management.yaml** *(Split from quality-control)*
+    - Redundancy identification
+    - Resolution strategies
+    - Information progression
+
+17. **final-verification.yaml** *(Split from quality-control)*
+    - Pre-submission checklist
+    - Review reflection framework
+    - Continuous improvement process
+
+## Implementation Files
+
+18. **product-specific-frameworks.yaml** *(New)*
+    - Category-specific guidance
+    - Specialized testing matrices
+    - Tailored section structures
+
+19. **examples-and-templates.yaml** *(New)*
+    - Complete review examples
+    - Section-specific examples
+    - Before/after improvement examples
+
+This structure breaks down complex files into more focused components while maintaining logical relationships between elements. Each file has a clearer purpose and more manageable scope, making the system easier to navigate, understand, and implement.
