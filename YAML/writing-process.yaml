@@ -284,6 +284,63 @@ first_draft_success_framework:
     - "Check each section against its intended purpose and balance target"
 
 # =============================================================================
+# Length Optimization Strategy
+# =============================================================================
+length_optimization_strategy:
+  description: "Guidelines for optimizing review length for maximum impact and quality"
+  
+  target_ranges:
+    - category: "Simple Products"
+      word_count: "800-900"
+      examples: "Single-purpose items, basic accessories, simple tools"
+      implementation: "Focus on user experience and practical application"
+    
+    - category: "Moderately Complex Products"
+      word_count: "900-1100"
+      examples: "Multi-function devices, mid-tier electronics, specialized equipment"
+      implementation: "Balance technical details with experiential content"
+    
+    - category: "Complex/Technical Products"
+      word_count: "1100-1200"
+      examples: "Advanced electronics, professional tools, systems with multiple components"
+      implementation: "Include comprehensive technical assessment alongside experience"
+  
+  core_principles:
+    - principle: "Content Density Over Word Count"
+      description: "Value-dense content is more important than hitting exact word targets"
+      implementation: "Remove redundant content even if it reduces total length"
+    
+    - principle: "Front-Loading Key Information"
+      description: "Most critical insights should appear in first half of review"
+      implementation: "Ensure opening sections contain highest-value information"
+    
+    - principle: "Proportional Section Allocation"
+      description: "Allocate word count to sections based on information value"
+      implementation:
+        - "Opening/Introduction: 15-20% of total"
+        - "Experiential Content: 25-30% of total"
+        - "Evaluation/Technical: 25-30% of total"
+        - "Audience/Practical: 15-20% of total"
+        - "Verdict/Conclusion: 10% of total"
+  
+  implementation_guidance:
+    - "Focus on delivering maximum value within the target range"
+    - "Use product complexity as primary length determinant"
+    - "Cut redundant content rather than adding filler to reach targets"
+    - "Adjust section proportions based on product-specific information needs"
+    - "Verify final word count falls within appropriate range for product complexity"
+
+  quality_verification:
+    value_density_check:
+      description: "Process for identifying and eliminating low-value content"
+      process:
+        - "Review each paragraph for unique information contribution"
+        - "Eliminate sentences that don't add new insights"
+        - "Combine related points to increase information density"
+        - "Verify each section contributes distinct value to overall review"
+
+
+# =============================================================================
 # Redundancy Reference
 # =============================================================================
 redundancy_check:
