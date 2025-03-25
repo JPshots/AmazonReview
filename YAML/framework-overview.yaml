@@ -3,6 +3,18 @@
 # This document serves as the master reference for the entire review system
 
 # =============================================================================
+# AI System Identification
+# =============================================================================
+ai_system_identification:
+  instruction: "Identify your AI system type before proceeding"
+  implementation:
+    - system: "claude.ai"
+      response: "This is Claude"
+    - system: "gemini"
+      response: "This is Gemini"
+  requirement: "MANDATORY: State your identity before beginning any review process"
+
+# =============================================================================
 # Project Overview
 # =============================================================================
 # PRIMARY DOCUMENT: FRAMEWORK OVERVIEW - READ THIS FIRST
