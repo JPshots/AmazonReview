@@ -1,0 +1,672 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Amazon Review Framework Writing Process Schema",
+    "description": "Framework for the workflow of transforming product knowledge into exceptional reviews",
+    "type": "object",
+    "required": ["metadata", "processOverview", "criticalPrePlanning", "initialCaptureAndAnalysis", "firstDraftSuccessFramework"],
+    "properties": {
+      "metadata": {
+        "$ref": "common.schema.json#/definitions/metadata"
+      },
+      "processOverview": {
+        "type": "object",
+        "required": ["description", "corePrinciples", "criticalWorkflow"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Overview of the review writing process"
+          },
+          "corePrinciples": {
+            "type": "array",
+            "description": "Core principles of the writing process",
+            "items": {
+              "type": "string"
+            }
+          },
+          "criticalWorkflow": {
+            "type": "object",
+            "required": ["description", "implementationWarning", "phases"],
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Description of the mandatory workflow"
+              },
+              "implementationWarning": {
+                "type": "string",
+                "description": "Warning about following the workflow sequence"
+              },
+              "phases": {
+                "type": "array",
+                "description": "Sequential phases of the review creation process",
+                "items": {
+                  "type": "object",
+                  "required": ["order", "name", "action", "dependencyWarning", "validation", "implementation"],
+                  "properties": {
+                    "order": {
+                      "type": "integer",
+                      "description": "Sequence order of this phase"
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "Phase name"
+                    },
+                    "action": {
+                      "type": "string",
+                      "description": "Primary action in this phase"
+                    },
+                    "dependencyWarning": {
+                      "type": "string",
+                      "description": "Warning about prerequisite phases"
+                    },
+                    "validation": {
+                      "type": "string",
+                      "description": "How to validate phase completion"
+                    },
+                    "implementation": {
+                      "type": "array",
+                      "description": "Implementation steps for this phase",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "reference": {
+                      "type": "string",
+                      "description": "Reference to detailed implementation guidance"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "productAdaptationProcess": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Process for adapting the writing workflow to specific product categories"
+          },
+          "guidingPrinciples": {
+            "type": "array",
+            "description": "Principles for product-specific adaptation",
+            "items": {
+              "type": "string"
+            }
+          },
+          "adaptationWorkflow": {
+            "type": "array",
+            "description": "Workflow for product adaptation",
+            "items": {
+              "type": "object",
+              "properties": {
+                "phase": {
+                  "type": "string",
+                  "description": "Adaptation phase"
+                },
+                "actions": {
+                  "type": "array",
+                  "description": "Actions in this phase",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "outputs": {
+                  "type": "array",
+                  "description": "Expected outputs from this phase",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "uniqueContentIdentification": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Process for identifying valuable product-specific content"
+              },
+              "steps": {
+                "type": "array",
+                "description": "Steps for identifying unique content",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "exampleUniqueContent": {
+                "type": "array",
+                "description": "Examples of unique content by category",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "category": {
+                      "type": "string",
+                      "description": "Product category"
+                    },
+                    "uniqueContentNeeds": {
+                      "type": "array",
+                      "description": "Unique content needs for this category",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "criticalPrePlanning": {
+        "type": "object",
+        "required": ["title", "description", "priority", "mandatorySteps", "completionVerification"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the pre-planning process"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the pre-planning purpose"
+          },
+          "priority": {
+            "type": "string",
+            "description": "Priority level of this process"
+          },
+          "mandatorySteps": {
+            "type": "array",
+            "description": "Required pre-writing planning steps",
+            "items": {
+              "type": "object",
+              "required": ["order", "action"],
+              "properties": {
+                "order": {
+                  "type": "integer",
+                  "description": "Step sequence order"
+                },
+                "action": {
+                  "type": "string",
+                  "description": "Action to perform"
+                },
+                "guidance": {
+                  "type": "array",
+                  "description": "Guidance for performing this action",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "reference": {
+                  "type": "string",
+                  "description": "Reference to detailed implementation guidance"
+                },
+                "priority": {
+                  "type": "string",
+                  "description": "Priority level of this step"
+                },
+                "checklist": {
+                  "type": "array",
+                  "description": "Checklist for this step",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "validation": {
+                  "type": "string",
+                  "description": "Validation criteria for this step"
+                }
+              }
+            }
+          },
+          "completionVerification": {
+            "type": "object",
+            "properties": {
+              "checkboxes": {
+                "type": "array",
+                "description": "Verification checkboxes for pre-planning completion",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "initialCaptureAndAnalysis": {
+        "type": "object",
+        "properties": {
+          "initialCapture": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Description of the initial capture process"
+              },
+              "guidelines": {
+                "type": "array",
+                "description": "Guidelines for initial thought capture",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "contentAnalysis": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Description of the content analysis process"
+              },
+              "elementsToExtract": {
+                "type": "array",
+                "description": "Elements to extract from raw content",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "organizationProcess": {
+                "type": "array",
+                "description": "Process for organizing raw content",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "firstDraftSuccessFramework": {
+        "type": "object",
+        "required": ["description", "integratedWritingProcess", "sectionTransitions", "implementationGuidance"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Approach for creating high-quality first drafts"
+          },
+          "integratedWritingProcess": {
+            "type": "object",
+            "properties": {
+              "principle": {
+                "type": "string",
+                "description": "Core principle of integrated writing"
+              },
+              "techniques": {
+                "type": "array",
+                "description": "Techniques for integrated writing",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "sectionTransitions": {
+            "type": "object",
+            "properties": {
+              "principle": {
+                "type": "string",
+                "description": "Core principle of section transitions"
+              },
+              "techniques": {
+                "type": "array",
+                "description": "Techniques for effective transitions",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "implementationGuidance": {
+            "type": "array",
+            "description": "Guidance for implementing the first draft framework",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "lengthOptimizationStrategy": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Guidelines for optimizing review length"
+          },
+          "targetRanges": {
+            "type": "array",
+            "description": "Target word count ranges by product complexity",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "type": "string",
+                  "description": "Product complexity category"
+                },
+                "wordCount": {
+                  "type": "string",
+                  "description": "Target word count range"
+                },
+                "examples": {
+                  "type": "string",
+                  "description": "Examples of products in this category"
+                },
+                "implementation": {
+                  "type": "string",
+                  "description": "Implementation guidance for this category"
+                }
+              }
+            }
+          },
+          "corePrinciples": {
+            "type": "array",
+            "description": "Core principles of length optimization",
+            "items": {
+              "type": "object",
+              "properties": {
+                "principle": {
+                  "type": "string",
+                  "description": "Optimization principle"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Description of the principle"
+                },
+                "implementation": {
+                  "type": "string",
+                  "description": "How to implement the principle"
+                }
+              }
+            }
+          },
+          "implementationGuidance": {
+            "type": "array",
+            "description": "Guidance for implementing length optimization",
+            "items": {
+              "type": "string"
+            }
+          },
+          "qualityVerification": {
+            "type": "object",
+            "properties": {
+              "valueDensityCheck": {
+                "type": "object",
+                "properties": {
+                  "description": {
+                    "type": "string",
+                    "description": "Process for checking value density"
+                  },
+                  "process": {
+                    "type": "array",
+                    "description": "Value density check process",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "redundancyCheck": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Reference to redundancy review framework"
+          },
+          "reference": {
+            "type": "string",
+            "description": "Location of comprehensive redundancy process"
+          },
+          "implementationGuidance": {
+            "type": "array",
+            "description": "Guidance for implementing redundancy checks",
+            "items": {
+              "type": "string"
+            }
+          },
+          "implementationProcess": {
+            "type": "string",
+            "description": "Reference to implementation process"
+          }
+        }
+      },
+      "creativeTechniqueApplication": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Workflow for incorporating creative elements"
+          },
+          "planningPhase": {
+            "type": "array",
+            "description": "Creative planning steps",
+            "items": {
+              "type": "string"
+            }
+          },
+          "implementationPhase": {
+            "type": "array",
+            "description": "Creative implementation steps",
+            "items": {
+              "type": "string"
+            }
+          },
+          "reviewPhase": {
+            "type": "array",
+            "description": "Creative review steps",
+            "items": {
+              "type": "string"
+            }
+          },
+          "strategicPlacement": {
+            "type": "array",
+            "description": "Strategic placement of creative elements",
+            "items": {
+              "type": "object",
+              "properties": {
+                "location": {
+                  "type": "string",
+                  "description": "Content location"
+                },
+                "creativeElements": {
+                  "type": "string",
+                  "description": "Recommended creative elements"
+                },
+                "purpose": {
+                  "type": "string",
+                  "description": "Purpose of these elements"
+                }
+              }
+            }
+          }
+        }
+      },
+      "artifactVersioning": {
+        "type": "object",
+        "properties": {
+          "criticalRules": {
+            "type": "object",
+            "properties": {
+              "priority": {
+                "type": "string",
+                "description": "Priority level of versioning rules"
+              },
+              "definition": {
+                "type": "string",
+                "description": "Single version per response rule"
+              },
+              "rationale": {
+                "type": "string",
+                "description": "Reasoning behind the rule"
+              },
+              "implementation": {
+                "type": "array",
+                "description": "Implementation guidelines",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "validation": {
+                "type": "object",
+                "properties": {
+                  "check": {
+                    "type": "string",
+                    "description": "Validation check"
+                  }
+                }
+              }
+            }
+          },
+          "bestPractices": {
+            "type": "array",
+            "description": "Best practices for artifact versioning",
+            "items": {
+              "type": "string"
+            }
+          },
+          "decisionGuidance": {
+            "type": "object",
+            "properties": {
+              "scenarios": {
+                "type": "array",
+                "description": "Decision scenarios",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "condition": {
+                      "type": "string",
+                      "description": "Decision condition"
+                    },
+                    "action": {
+                      "type": "string",
+                      "description": "Recommended action"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "chatSizeOptimization": {
+            "type": "object",
+            "properties": {
+              "priority": {
+                "type": "string",
+                "description": "Priority level"
+              },
+              "techniques": {
+                "type": "array",
+                "description": "Optimization techniques",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "finalPolishProcess": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Steps for finalizing review before submission"
+          },
+          "polishSteps": {
+            "type": "array",
+            "description": "Final polish steps",
+            "items": {
+              "type": "object",
+              "properties": {
+                "order": {
+                  "type": "integer",
+                  "description": "Step order"
+                },
+                "action": {
+                  "type": "string",
+                  "description": "Action to take"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Description of the action"
+                },
+                "reference": {
+                  "type": "string",
+                  "description": "Reference to implementation guidance"
+                },
+                "techniques": {
+                  "type": "array",
+                  "description": "Techniques for implementation",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "contentCreationProcess": {
+            "type": "object",
+            "properties": {
+              "checkpoints": {
+                "type": "array",
+                "description": "Content creation checkpoints",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "Checkpoint name"
+                    },
+                    "timing": {
+                      "type": "string",
+                      "description": "When to perform the checkpoint"
+                    },
+                    "requirements": {
+                      "type": "array",
+                      "description": "Requirements to check",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "validation": {
+                      "type": "string",
+                      "description": "Validation criteria"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "finalVerification": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Description of final verification"
+              },
+              "checklist": {
+                "type": "array",
+                "description": "Final verification checklist",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "reference": {
+                "type": "string",
+                "description": "Reference to quality assessment framework"
+              }
+            }
+          }
+        }
+      },
+      "frameworkRelationships": {
+        "type": "array",
+        "description": "Relationships between this component and others in the framework",
+        "items": {
+          "$ref": "common.schema.json#/definitions/componentRelationship"
+        }
+      }
+    }
+  }

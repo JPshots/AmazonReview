@@ -1,0 +1,752 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Amazon Review Framework Question Framework Schema",
+    "description": "Structure for gathering comprehensive product information through strategic questioning",
+    "type": "object",
+    "required": ["metadata", "questionFramework", "contextualGapsFramework", "questionPrioritizationFramework", "informationTrackingSystem", "adaptiveFollowUpSystem"],
+    "properties": {
+      "metadata": {
+        "$ref": "common.schema.json#/definitions/metadata"
+      },
+      "questionFramework": {
+        "type": "object",
+        "required": ["description", "workflowIntegration", "corePrinciples"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Overview of the question framework approach"
+          },
+          "workflowIntegration": {
+            "type": "string",
+            "description": "How the framework integrates with the review workflow"
+          },
+          "mandatoryRequirement": {
+            "type": "object",
+            "properties": {
+              "rule": {
+                "type": "string",
+                "description": "Critical rule for question submission timing"
+              },
+              "procedure": {
+                "type": "array",
+                "description": "Steps for implementing the rule",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "guidance": {
+                "type": "array",
+                "description": "Guidance for effective question planning",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "corePrinciples": {
+            "type": "array",
+            "description": "Fundamental principles of strategic questioning",
+            "items": {
+              "type": "object",
+              "required": ["name", "definition"],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the principle"
+                },
+                "definition": {
+                  "type": "string",
+                  "description": "Definition of the principle"
+                },
+                "implementation": {
+                  "type": "array",
+                  "description": "How to implement this principle",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "proactiveQuestioningTechniques": {
+        "type": "object",
+        "description": "Strategies for anticipatory questioning",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Overview of proactive questioning approach"
+          },
+          "strategies": {
+            "type": "array",
+            "description": "Specific proactive questioning strategies",
+            "items": {
+              "type": "object",
+              "required": ["name", "description"],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the strategy"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Description of the strategy"
+                },
+                "examples": {
+                  "type": "array",
+                  "description": "Example questions using this strategy",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "implementation": {
+                  "type": "array",
+                  "description": "How to implement this strategy",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "imageAnalysisStrategies": {
+        "type": "object",
+        "description": "Framework for extracting information from product images",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Overview of image analysis approach"
+          },
+          "analysisCategories": {
+            "type": "array",
+            "description": "Categories of visual information to analyze",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Category name"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Description of this analysis category"
+                },
+                "questions": {
+                  "type": "array",
+                  "description": "Questions to guide analysis in this category",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "visualVerificationChecklist": {
+            "type": "array",
+            "description": "Checklist for thorough image analysis",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "type": "string",
+                  "description": "Verification category"
+                },
+                "elements": {
+                  "type": "array",
+                  "description": "Elements to verify in this category",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "implementationGuidance": {
+            "type": "array",
+            "description": "Guidelines for effective image analysis",
+            "items": {
+              "type": "string"
+            }
+          },
+          "redFlagsChecklist": {
+            "type": "array",
+            "description": "Warning signs to watch for in images",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "contextualGapsFramework": {
+        "type": "object",
+        "required": ["description", "gapCategories", "process"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Overview of the contextual gaps framework"
+          },
+          "gapCategories": {
+            "type": "array",
+            "description": "Categories of information gaps to identify",
+            "items": {
+              "type": "object",
+              "required": ["name", "definition", "examples", "priority"],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the gap category"
+                },
+                "definition": {
+                  "type": "string",
+                  "description": "Definition of this type of information gap"
+                },
+                "examples": {
+                  "type": "array",
+                  "description": "Examples of gaps in this category",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "priority": {
+                  "type": "string",
+                  "description": "Priority level for addressing this gap type"
+                }
+              }
+            }
+          },
+          "process": {
+            "type": "array",
+            "description": "Process for identifying and addressing gaps",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "questionPrioritizationFramework": {
+        "type": "object",
+        "required": ["description", "scoringCriteria", "selectionProcess"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Overview of the question prioritization approach"
+          },
+          "scoringCriteria": {
+            "type": "array",
+            "description": "Criteria for scoring question value",
+            "items": {
+              "type": "object",
+              "required": ["name", "description", "scoringGuide"],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the criterion"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Description of this scoring criterion"
+                },
+                "scoringGuide": {
+                  "type": "array",
+                  "description": "Guidance for scoring on this criterion",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "integer",
+                        "description": "Score value"
+                      },
+                      "level": {
+                        "type": "string",
+                        "description": "Description of this score level"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selectionProcess": {
+            "type": "array",
+            "description": "Process for selecting highest-value questions",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "informationTrackingSystem": {
+        "type": "object",
+        "required": ["description", "categories", "implementationGuidance"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Overview of the information tracking system"
+          },
+          "categories": {
+            "type": "array",
+            "description": "Categories of information to track",
+            "items": {
+              "type": "object",
+              "required": ["name", "trackingElements"],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the information category"
+                },
+                "trackingElements": {
+                  "type": "array",
+                  "description": "Specific elements to track in this category",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "implementationGuidance": {
+            "type": "array",
+            "description": "Guidelines for effective information tracking",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "adaptiveFollowUpSystem": {
+        "type": "object",
+        "required": ["description", "unansweredQuestionHandler", "emergentInsightFollowUp"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Overview of the adaptive follow-up system"
+          },
+          "unansweredQuestionHandler": {
+            "type": "object",
+            "properties": {
+              "principles": {
+                "type": "array",
+                "description": "Principles for handling unanswered questions",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "responseCategories": {
+                "type": "array",
+                "description": "Categories of response based on information importance",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "Category name"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "description": "Definition of this category"
+                    },
+                    "examples": {
+                      "type": "array",
+                      "description": "Examples of this type of information gap",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "strategy": {
+                      "type": "object",
+                      "properties": {
+                        "action": {
+                          "type": "string",
+                          "description": "Action to take for this category"
+                        },
+                        "guidance": {
+                          "type": "array",
+                          "description": "Guidance for implementing this strategy",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "implementationProcess": {
+                "type": "array",
+                "description": "Process for handling unanswered questions",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "emergentInsightFollowUp": {
+            "type": "object",
+            "description": "System for pursuing valuable new insights during conversation",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Description of emergent insight follow-up"
+              },
+              "valueAssessment": {
+                "type": "object",
+                "properties": {
+                  "criteria": {
+                    "type": "array",
+                    "description": "Criteria for evaluating insight value",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": "Name of criterion"
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": "Description of criterion"
+                        },
+                        "scoring": {
+                          "type": "array",
+                          "description": "Scoring levels for this criterion",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "value": {
+                                "type": "integer",
+                                "description": "Score value"
+                              },
+                              "level": {
+                                "type": "string",
+                                "description": "Description of this level"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "thresholdGuidelines": {
+                    "type": "array",
+                    "description": "Guidelines for different score thresholds",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": "Name of threshold"
+                        },
+                        "score": {
+                          "type": "string",
+                          "description": "Score range for this threshold"
+                        },
+                        "action": {
+                          "type": "string",
+                          "description": "Action to take at this threshold"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "followUpTechniques": {
+                "type": "array",
+                "description": "Techniques for pursuing valuable insights",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "Technique name"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "Description of technique"
+                    },
+                    "example": {
+                      "type": "object",
+                      "properties": {
+                        "initial": {
+                          "type": "string",
+                          "description": "Initial statement from user"
+                        },
+                        "emergentInsight": {
+                          "type": "string",
+                          "description": "Potential insight identified"
+                        },
+                        "followUp": {
+                          "type": "string",
+                          "description": "Example follow-up question using this technique"
+                        }
+                      }
+                    },
+                    "guidance": {
+                      "type": "array",
+                      "description": "Guidance for implementing this technique",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "implementationGuidance": {
+                "type": "array",
+                "description": "Overall guidance for implementation",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "commonQuestionConsiderations": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Overview of common question areas"
+          },
+          "coreUnderstanding": {
+            "type": "array",
+            "description": "Areas of focus for core product understanding",
+            "items": {
+              "type": "object",
+              "properties": {
+                "focus": {
+                  "type": "string",
+                  "description": "Area of focus"
+                }
+              }
+            }
+          },
+          "contextualQuestionOptions": {
+            "type": "array",
+            "description": "Context-specific question options",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "type": "string",
+                  "description": "Question category"
+                },
+                "question": {
+                  "type": "string",
+                  "description": "Example question"
+                },
+                "relevance": {
+                  "type": "string",
+                  "description": "When this question is relevant"
+                },
+                "priority": {
+                  "type": "string",
+                  "description": "Priority level of this question type"
+                }
+              }
+            }
+          },
+          "implementationGuidance": {
+            "type": "array",
+            "description": "Guidance for implementing question considerations",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "keywordGatheringQuestions": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Purpose of keyword gathering questions"
+          },
+          "questions": {
+            "type": "array",
+            "description": "Questions designed to elicit search-relevant content",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "strategicQuestionLibrary": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Overview of the strategic question library"
+          },
+          "categories": {
+            "type": "array",
+            "description": "Categories of strategic questions",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Category name"
+                },
+                "questions": {
+                  "type": "array",
+                  "description": "Questions in this category",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "thematicGatheringNotes": {
+            "type": "array",
+            "description": "Notes on thematic question usage",
+            "items": {
+              "type": "string"
+            }
+          },
+          "highRiskRewardQuestions": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Purpose of high risk/reward questions"
+              },
+              "principles": {
+                "type": "array",
+                "description": "Principles for using these questions",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "questionExamples": {
+                "type": "array",
+                "description": "Examples of high risk/reward questions",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "question": {
+                      "type": "string",
+                      "description": "The question"
+                    },
+                    "value": {
+                      "type": "string",
+                      "description": "Potential value of this question"
+                    }
+                  }
+                }
+              },
+              "implementationGuidance": {
+                "type": "array",
+                "description": "Guidance for implementing these questions",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "categorySpecificQuestions": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Overview of category-specific questions"
+          },
+          "implementationGuidance": {
+            "type": "array",
+            "description": "Guidance for category-specific questioning",
+            "items": {
+              "type": "string"
+            }
+          },
+          "exampleFrameworks": {
+            "type": "array",
+            "description": "Example question frameworks by category",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "type": "string",
+                  "description": "Product category"
+                },
+                "essentialQuestions": {
+                  "type": "array",
+                  "description": "Essential questions for this category",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "highValueFollowUps": {
+                  "type": "array",
+                  "description": "High-value follow-up questions",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "templateForNewCategories": {
+            "type": "object",
+            "properties": {
+              "steps": {
+                "type": "array",
+                "description": "Steps for creating category-specific questions",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "frameworkStructure": {
+                "type": "array",
+                "description": "Recommended structure for question frameworks",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "questionEvaluationSystem": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Framework for assessing question quality"
+          },
+          "highValueQuestions": {
+            "type": "array",
+            "description": "Examples of high-value questions by category",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "type": "string",
+                  "description": "Question category"
+                },
+                "sample": {
+                  "type": "string",
+                  "description": "Sample high-value question"
+                },
+                "impact": {
+                  "type": "string",
+                  "description": "Impact of this question type"
+                }
+              }
+            }
+          }
+        }
+      },
+      "frameworkRelationships": {
+        "type": "array",
+        "description": "Relationships between this component and others in the framework",
+        "items": {
+          "$ref": "common.schema.json#/definitions/componentRelationship"
+        }
+      }
+    }
+  }

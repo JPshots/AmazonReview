@@ -1,0 +1,501 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Amazon Review Framework Thematic Frameworks Schema",
+    "description": "Framework for developing and implementing consistent themes throughout reviews",
+    "type": "object",
+    "required": ["metadata", "thematicFramework", "themeImplementation", "thematicExamples"],
+    "properties": {
+      "metadata": {
+        "$ref": "common.schema.json#/definitions/metadata"
+      },
+      "thematicFramework": {
+        "type": "object",
+        "required": ["description", "creativeVision", "themeDiscovery", "thematicOptions"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Overview of the thematic framework approach"
+          },
+          "implementationReference": {
+            "type": "string",
+            "description": "Reference to section naming implementation"
+          },
+          "creativeVision": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Framework for developing original thematic approaches"
+              },
+              "principles": {
+                "type": "array",
+                "description": "Core principles of thematic creativity",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ideaGeneration": {
+                "type": "object",
+                "properties": {
+                  "crossDomainMapping": {
+                    "type": "object",
+                    "properties": {
+                      "description": {
+                        "type": "string",
+                        "description": "Description of cross-domain mapping approach"
+                      },
+                      "prompts": {
+                        "type": "array",
+                        "description": "Prompts for generating cross-domain connections",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "example": {
+                        "type": "object",
+                        "properties": {
+                          "product": {
+                            "type": "string",
+                            "description": "Example product"
+                          },
+                          "connection": {
+                            "type": "string",
+                            "description": "Unexpected domain connection"
+                          },
+                          "thematicPotential": {
+                            "type": "string",
+                            "description": "Potential thematic framework"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "personalExpertiseTransfer": {
+                    "type": "object",
+                    "properties": {
+                      "description": {
+                        "type": "string",
+                        "description": "Description of expertise transfer approach"
+                      },
+                      "prompts": {
+                        "type": "array",
+                        "description": "Prompts for applying personal expertise",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "example": {
+                        "type": "object",
+                        "properties": {
+                          "product": {
+                            "type": "string",
+                            "description": "Example product"
+                          },
+                          "expertise": {
+                            "type": "string",
+                            "description": "Personal expertise domain"
+                          },
+                          "thematicPotential": {
+                            "type": "string",
+                            "description": "Potential thematic framework"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "themeDiscovery": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Process for identifying product-specific themes"
+              },
+              "principles": {
+                "type": "array",
+                "description": "Principles for effective theme discovery",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "process": {
+                "type": "array",
+                "description": "Theme discovery process",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "generativeQuestions": {
+                "type": "array",
+                "description": "Questions to help generate theme ideas",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "thematicOptions": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Potential thematic frameworks that can be adapted"
+              },
+              "options": {
+                "type": "array",
+                "description": "Thematic framework options",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "Theme name"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "Description of this thematic approach"
+                    },
+                    "example": {
+                      "type": "string",
+                      "description": "Example of theme in use"
+                    },
+                    "productFit": {
+                      "type": "string",
+                      "description": "Products that fit well with this theme"
+                    }
+                  }
+                }
+              },
+              "themedSectionFrameworks": {
+                "type": "array",
+                "description": "Section header frameworks for specific themes",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "theme": {
+                      "type": "string",
+                      "description": "Theme name"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "Description of this theme's framework"
+                    },
+                    "sectionHeaders": {
+                      "type": "array",
+                      "description": "Themed section headers",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "original": {
+                            "type": "string",
+                            "description": "Original section name"
+                          },
+                          "themed": {
+                            "type": "string",
+                            "description": "Themed section name"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "themeImplementation": {
+        "type": "object",
+        "required": ["thematicAnchorPoints", "thematicProgressionMap", "balancingConsiderations"],
+        "properties": {
+          "thematicAnchorPoints": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Strategic locations for thematic elements"
+              },
+              "anchorPoints": {
+                "type": "array",
+                "description": "Key anchor points for thematic elements",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "Anchor point name"
+                    },
+                    "purpose": {
+                      "type": "string",
+                      "description": "Strategic purpose of this anchor point"
+                    },
+                    "implementation": {
+                      "type": "array",
+                      "description": "Implementation guidelines for this anchor point",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "example": {
+                      "type": "object",
+                      "properties": {
+                        "theme": {
+                          "type": "string",
+                          "description": "Example theme"
+                        },
+                        "implementation": {
+                          "type": "string",
+                          "description": "Example implementation"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "thematicProgressionMap": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Guidelines for evolving thematic elements throughout reviews"
+              },
+              "principles": {
+                "type": "array",
+                "description": "Principles of thematic progression",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "implementation": {
+                "type": "object",
+                "properties": {
+                  "phases": {
+                    "type": "array",
+                    "description": "Phases of thematic progression",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": "Phase name"
+                        },
+                        "thematicIntensity": {
+                          "type": "string",
+                          "description": "Recommended thematic intensity"
+                        },
+                        "purpose": {
+                          "type": "string",
+                          "description": "Purpose of this intensity level"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "exampleProgression": {
+                "type": "object",
+                "properties": {
+                  "theme": {
+                    "type": "string",
+                    "description": "Example theme"
+                  },
+                  "introduction": {
+                    "type": "string",
+                    "description": "Thematic implementation in introduction"
+                  },
+                  "technical": {
+                    "type": "string",
+                    "description": "Thematic implementation in technical sections"
+                  },
+                  "experiential": {
+                    "type": "string",
+                    "description": "Thematic implementation in experiential sections"
+                  },
+                  "verdict": {
+                    "type": "string",
+                    "description": "Thematic implementation in verdict"
+                  }
+                }
+              }
+            }
+          },
+          "balancingConsiderations": {
+            "type": "array",
+            "description": "Considerations for balancing thematic elements with information",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "thematicExamples": {
+        "type": "array",
+        "description": "Complete examples of thematic frameworks in action",
+        "items": {
+          "type": "object",
+          "properties": {
+            "theme": {
+              "type": "string",
+              "description": "Theme name"
+            },
+            "product": {
+              "type": "string",
+              "description": "Product type"
+            },
+            "rationale": {
+              "type": "string",
+              "description": "Why this theme fits this product"
+            },
+            "sectionFramework": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "description": "Themed title"
+                },
+                "introduction": {
+                  "type": "string",
+                  "description": "Themed introduction approach"
+                },
+                "sections": {
+                  "type": "array",
+                  "description": "Themed sections",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "standardName": {
+                        "type": "string",
+                        "description": "Standard section name"
+                      },
+                      "themedName": {
+                        "type": "string",
+                        "description": "Themed section name"
+                      },
+                      "implementation": {
+                        "type": "string",
+                        "description": "How to implement theme in this section"
+                      }
+                    }
+                  }
+                },
+                "conclusion": {
+                  "type": "string",
+                  "description": "Themed conclusion approach"
+                }
+              }
+            },
+            "excerpts": {
+              "type": "array",
+              "description": "Example excerpts demonstrating theme implementation",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "section": {
+                    "type": "string",
+                    "description": "Section name"
+                  },
+                  "content": {
+                    "type": "string",
+                    "description": "Example themed content"
+                  },
+                  "notes": {
+                    "type": "string",
+                    "description": "Implementation notes"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "themeSelectionGuidance": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Guidance for selecting appropriate themes for different products"
+          },
+          "selectionFactors": {
+            "type": "array",
+            "description": "Factors to consider in theme selection",
+            "items": {
+              "type": "object",
+              "properties": {
+                "factor": {
+                  "type": "string",
+                  "description": "Selection factor"
+                },
+                "considerations": {
+                  "type": "array",
+                  "description": "Considerations for this factor",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "examples": {
+                  "type": "object",
+                  "properties": {
+                    "goodMatch": {
+                      "type": "string",
+                      "description": "Example of good theme-product match"
+                    },
+                    "poorMatch": {
+                      "type": "string",
+                      "description": "Example of poor theme-product match"
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "description": "Explanation of the difference"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "productCategoryGuidance": {
+            "type": "array",
+            "description": "Theme guidance by product category",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "type": "string",
+                  "description": "Product category"
+                },
+                "effectiveThemes": {
+                  "type": "array",
+                  "description": "Themes that work well for this category",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "themesToAvoid": {
+                  "type": "array",
+                  "description": "Themes to avoid for this category",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "rationale": {
+                  "type": "string",
+                  "description": "Explanation of these recommendations"
+                }
+              }
+            }
+          }
+        }
+      },
+      "frameworkRelationships": {
+        "type": "array",
+        "description": "Relationships between this component and others in the framework",
+        "items": {
+          "$ref": "common.schema.json#/definitions/componentRelationship"
+        }
+      }
+    }
+  }

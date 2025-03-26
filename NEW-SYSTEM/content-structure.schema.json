@@ -1,0 +1,553 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Amazon Review Framework Content Structure Schema",
+    "description": "Framework for organizing review content into logical, engaging structures",
+    "type": "object",
+    "required": ["metadata", "reviewStructure", "sectionNaming", "contentOrganization"],
+    "properties": {
+      "metadata": {
+        "$ref": "common.schema.json#/definitions/metadata"
+      },
+      "reviewStructure": {
+        "type": "object",
+        "required": ["description", "coreElements"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Overview of review structure purpose"
+          },
+          "coreElements": {
+            "type": "array",
+            "description": "Essential structural components of a review",
+            "items": {
+              "type": "object",
+              "required": ["name", "required", "description", "purpose"],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Element name"
+                },
+                "required": {
+                  "type": "boolean",
+                  "description": "Whether this element is required"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Description of the element's content"
+                },
+                "purpose": {
+                  "type": "string",
+                  "description": "Strategic purpose this element serves"
+                },
+                "keywordImplementation": {
+                  "type": "string",
+                  "description": "Reference to related keyword strategies"
+                },
+                "guidelines": {
+                  "type": "array",
+                  "description": "Guidelines for implementing this element",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "examples": {
+                  "type": "array",
+                  "description": "Examples of this element",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "usageGuidance": {
+                  "type": "string",
+                  "description": "When to use optional elements"
+                }
+              }
+            }
+          },
+          "optionalCustomElements": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Guidelines for creating custom sections"
+              },
+              "guidance": {
+                "type": "array",
+                "description": "Guidance for implementing custom elements",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "exampleCategories": {
+                "type": "array",
+                "description": "Examples of custom sections by category",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "sectionNaming": {
+        "type": "object",
+        "required": ["description", "fundamentalPrinciples", "formattingStandards", "sectionNameOptions"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Guide to creating engaging section headers"
+          },
+          "fundamentalPrinciples": {
+            "type": "array",
+            "description": "Core principles of effective section naming",
+            "items": {
+              "type": "string"
+            }
+          },
+          "formattingStandards": {
+            "type": "object",
+            "properties": {
+              "format": {
+                "type": "string",
+                "description": "Standard format for section headers"
+              },
+              "examples": {
+                "type": "array",
+                "description": "Examples of properly formatted headers",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "implementation": {
+                "type": "string",
+                "description": "How to implement the format"
+              }
+            }
+          },
+          "sectionNameOptions": {
+            "type": "object",
+            "properties": {
+              "experientialSections": {
+                "type": "object",
+                "properties": {
+                  "purpose": {
+                    "type": "string",
+                    "description": "Purpose of experiential sections"
+                  },
+                  "options": {
+                    "type": "array",
+                    "description": "Name options for experiential sections",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "technicalSections": {
+                "type": "object",
+                "properties": {
+                  "purpose": {
+                    "type": "string",
+                    "description": "Purpose of technical sections"
+                  },
+                  "options": {
+                    "type": "array",
+                    "description": "Name options for technical sections",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "evaluationSections": {
+                "type": "object",
+                "properties": {
+                  "purpose": {
+                    "type": "string",
+                    "description": "Purpose of evaluation sections"
+                  },
+                  "options": {
+                    "type": "array",
+                    "description": "Name options for evaluation sections",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "practicalSections": {
+                "type": "object",
+                "properties": {
+                  "purpose": {
+                    "type": "string",
+                    "description": "Purpose of practical sections"
+                  },
+                  "options": {
+                    "type": "array",
+                    "description": "Name options for practical sections",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "conclusionSections": {
+                "type": "object",
+                "properties": {
+                  "purpose": {
+                    "type": "string",
+                    "description": "Purpose of conclusion sections"
+                  },
+                  "options": {
+                    "type": "array",
+                    "description": "Name options for conclusion sections",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "thematicFrameworks": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Creating consistent themed section headers"
+              },
+              "reference": {
+                "type": "string",
+                "description": "Reference to thematic framework definition"
+              },
+              "implementation": {
+                "type": "array",
+                "description": "Implementation steps for thematic headers",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "exampleThemes": {
+                "type": "array",
+                "description": "Example thematic frameworks",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "theme": {
+                      "type": "string",
+                      "description": "Theme name"
+                    },
+                    "applications": {
+                      "type": "array",
+                      "description": "Applications of this theme to section headers",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "functional": {
+                            "type": "string",
+                            "description": "Functional section type"
+                          },
+                          "themed": {
+                            "type": "string",
+                            "description": "Themed version of the header"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "themeGenerationQuestions": {
+                "type": "array",
+                "description": "Questions to help generate thematic frameworks",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "contentOrganization": {
+        "type": "object",
+        "required": ["description", "informationFlow", "formattingGuidance", "redundancyPrevention"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Core principles for effective information structuring"
+          },
+          "informationFlow": {
+            "type": "array",
+            "description": "Guidelines for logical information progression",
+            "items": {
+              "type": "string"
+            }
+          },
+          "formattingGuidance": {
+            "type": "object",
+            "properties": {
+              "paragraphs": {
+                "type": "string",
+                "description": "Guidelines for paragraph formatting"
+              },
+              "listsEnhancement": {
+                "type": "object",
+                "properties": {
+                  "principle": {
+                    "type": "string",
+                    "description": "Core principle for enhancing list items"
+                  },
+                  "implementation": {
+                    "type": "string",
+                    "description": "How to implement the enhancement principle"
+                  },
+                  "examples": {
+                    "type": "object",
+                    "properties": {
+                      "basic": {
+                        "type": "string",
+                        "description": "Example of basic list item"
+                      },
+                      "enhanced": {
+                        "type": "string",
+                        "description": "Example of enhanced list item"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "redundancyPrevention": {
+            "type": "object",
+            "properties": {
+              "principles": {
+                "type": "array",
+                "description": "Principles for preventing redundancy",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "reference": {
+                "type": "string",
+                "description": "Reference to complete redundancy checking process"
+              },
+              "note": {
+                "type": "string",
+                "description": "Note about structure-specific guidance"
+              },
+              "strategicExceptions": {
+                "type": "array",
+                "description": "Exceptions where redundancy may be acceptable",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "productSpecificSections": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Guidelines for adapting review sections to specific product categories"
+          },
+          "adaptationPrinciples": {
+            "type": "array",
+            "description": "Principles for product-specific adaptations",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sectionAdaptationProcess": {
+            "type": "array",
+            "description": "Process for adapting sections to product categories",
+            "items": {
+              "type": "object",
+              "properties": {
+                "step": {
+                  "type": "string",
+                  "description": "Adaptation step"
+                }
+              }
+            }
+          },
+          "specializedSectionExamples": {
+            "type": "array",
+            "description": "Examples of specialized sections by product category",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "type": "string",
+                  "description": "Product category"
+                },
+                "specializedSections": {
+                  "type": "array",
+                  "description": "Specialized sections for this category",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "Section name"
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "Purpose of this specialized section"
+                      },
+                      "implementation": {
+                        "type": "string",
+                        "description": "How to implement this section"
+                      },
+                      "replacesOrComplements": {
+                        "type": "string",
+                        "description": "Relationship to standard sections"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "implementationGuidance": {
+            "type": "array",
+            "description": "Guidance for implementing specialized sections",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "imageIntegration": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Framework for effectively incorporating images"
+          },
+          "referencePrinciples": {
+            "type": "array",
+            "description": "Principles for referencing images in content",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Principle name"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Description of the principle"
+                },
+                "examples": {
+                  "type": "array",
+                  "description": "Examples demonstrating the principle",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "integrationWorkflow": {
+            "type": "array",
+            "description": "Workflow for integrating images with content",
+            "items": {
+              "type": "object",
+              "properties": {
+                "step": {
+                  "type": "string",
+                  "description": "Integration step"
+                },
+                "actions": {
+                  "type": "array",
+                  "description": "Actions in this step",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "baselineExample": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Example review title"
+          },
+          "structure": {
+            "type": "object",
+            "properties": {
+              "opening_hook": {
+                "type": "string",
+                "description": "Example opening hook"
+              },
+              "daily_use": {
+                "type": "string",
+                "description": "Example daily use section"
+              },
+              "evaluation": {
+                "type": "string",
+                "description": "Example evaluation section"
+              },
+              "audience_section": {
+                "type": "string",
+                "description": "Example audience section"
+              },
+              "practical_notes": {
+                "type": "string",
+                "description": "Example practical notes section"
+              },
+              "verdict": {
+                "type": "string",
+                "description": "Example verdict section"
+              }
+            }
+          }
+        }
+      },
+      "mobileConsiderations": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Special formatting considerations for mobile devices"
+          },
+          "guidelines": {
+            "type": "array",
+            "description": "Guidelines for mobile-friendly formatting",
+            "items": {
+              "type": "string"
+            }
+          },
+          "mobileSpecificAdjustments": {
+            "type": "array",
+            "description": "Specific adjustments for mobile optimization",
+            "items": {
+              "type": "string"
+            }
+          },
+          "implementationGuidance": {
+            "type": "array",
+            "description": "Implementation guidance for mobile optimization",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "frameworkRelationships": {
+        "type": "array",
+        "description": "Relationships between this component and others in the framework",
+        "items": {
+          "$ref": "common.schema.json#/definitions/componentRelationship"
+        }
+      }
+    }
+  }
