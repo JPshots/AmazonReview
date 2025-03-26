@@ -1,0 +1,234 @@
+# personality_techniques.yaml
+# Specific methods for adding personality through humor and creative language
+
+# =============================================================================
+# Overview
+# =============================================================================
+overview:
+  description: "This file provides specific creative techniques for adding personality to reviews"
+  primary_purpose: "Offer practical methods for incorporating humor and creative language"
+  related_components:
+    - component: "personality-core.yaml"
+      relationship: "Provides the fundamental balance principles that guide technique implementation"
+    - component: "authentic-voice.yaml"
+      relationship: "Ensures personality techniques maintain genuine rather than marketing voice"
+    - component: "creative-approaches.yaml"
+      relationship: "Coordinates with thematic frameworks for consistent personality approach"
+    - component: "narrative-elements.yaml"
+      relationship: "Complements narrative techniques with personality elements"
+
+# =============================================================================
+# Core Personality Techniques
+# =============================================================================
+core_techniques:
+  description: "Primary methods for adding personality to reviews"
+  
+  techniques:
+    - name: "Unexpected Analogies"
+      description: "Creating comparisons that surprise while clarifying"
+      example: "Like upgrading from economy to business class in the snack world"
+      frequency: "1-2 per review"
+      best_for: "Highlighting significant improvements or quality differences"
+    
+    - name: "Deliberate Understatement"
+      description: "Understating something significant for humorous effect"
+      example: "Battery compartment has all the durability of wet tissue paper"
+      frequency: "1 per review"
+      best_for: "Highlighting serious design flaws or limitations"
+    
+    - name: "Absurd Specificity"
+      description: "Using unexpectedly detailed descriptions"
+      example: "Perfect for photographers whose flashes consume batteries like a toddler with Halloween candy"
+      frequency: "1-2 per review"
+      best_for: "Creating vivid user scenarios that readers can identify with"
+    
+    - name: "Self-Deprecating Observations"
+      description: "Using personal shortcomings to highlight product features"
+      example: "We've become popcorn snobs, vacuum-sealing kernels for optimal freshness"
+      frequency: "1 per review"
+      best_for: "Creating relatability and authenticity"
+    
+    - name: "Creative Terminology"
+      description: "Inventing colorful terms for standard features or issues"
+      example: "Artery-assassin oils" instead of "unhealthy oils"
+      frequency: "2-3 per review"
+      best_for: "Making technical terms more memorable and engaging"
+    
+    - name: "Situational Humor"
+      description: "Describing amusing scenarios that demonstrate product attributes"
+      example: "Standard glass-breakage scenario initiated: broom deployment, dustpan maneuvers, followed by tactical tweezer operations"
+      frequency: "1-2 per review"
+      best_for: "Demonstrating products in relatable contexts"
+  
+  selection_principles:
+    - "Choose techniques that naturally fit the product and context"
+    - "Select techniques that highlight the product's most distinctive features"
+    - "Adapt approach based on product category and target audience"
+    - "Combine multiple techniques for variety and richness"
+    - "Focus on techniques that illuminate rather than distract"
+
+# =============================================================================
+# Figurative Language Implementation
+# =============================================================================
+figurative_language:
+  description: "Guidelines for implementing effective figurative language in reviews"
+  
+  analogy_guidelines:
+    principle: "Use unexpected but relatable comparisons"
+    examples:
+      - "landing strip for baby feet"
+      - "Velcro that could probably hold a small aircraft together"
+    
+    vivid_imagery_categories:
+      - name: "Physical State Comparisons"
+        examples: 
+          - "feeling like you walked out of a spa" vs. "just crawled out of a losing boxing match"
+          - "walking popsicle" for abnormally low temperature reading
+      
+      - name: "Design Contradiction Analogies"
+        examples:
+          - "steering wheel on a toaster" for features that contradict product purpose
+          - "handle on a door that doesn't open" for misleading design elements
+      
+      - name: "Effort/Difficulty Analogies"
+        examples:
+          - "moving to the bathroom mirror would be like running a marathon"
+          - "energy of a sloth on sedatives" for depleted state
+  
+  comparative_frameworks:
+    description: "Structures for effectively incorporating product comparisons"
+    types:
+      - name: "Direct Alternative Comparison"
+        example: "Our first try: Enfamil's vitamin D offering. It delivered what felt like half a bathtub of thick liquid..."
+      
+      - name: "Traditional Method Comparison"
+        example: "The doctor-provided 'Baby D Drops' sample came in a fancy glass vial that required the steady hands of a neurosurgeon."
+      
+      - name: "Expectation vs. Reality Comparison"
+        example: "The packaging promised 'whisper-quiet operation.' In reality, it sounds like a small helicopter preparing for takeoff."
+
+# =============================================================================
+# Humor Techniques
+# =============================================================================
+humor_techniques:
+  description: "Specific approaches for incorporating humor effectively in reviews"
+  
+  natural_humor_techniques:
+    description: "Strategies for integrating humor naturally within product descriptions"
+    principles:
+      - "Embed humor directly within functional descriptions"
+      - "Use figurative language that both entertains and informs"
+      - "Allow product characteristics to dictate humor style"
+      - "Ensure humor serves information rather than overshadowing it"
+    
+    techniques:
+      - name: "Embedded Metaphors"
+        weak: "The basin is very sturdy. It can hold a lot of water without wobbling."
+        strong: "The basin can be relocated when full with only the slightest tsunami effect."
+      
+      - name: "Descriptive Hyperbole"
+        weak: "The handles are thin and can be uncomfortable when carrying a full basin."
+        strong: "The cut-out handles are thinner than our patience at 4AM when lifting a water-filled basin."
+      
+      - name: "Functional Similes"
+        weak: "The collapsibility feature wasn't useful for our large sink."
+        strong: "The collapsibility feature is as useful to us as sunglasses at midnight."
+  
+  situational_humor:
+    description: "Creating humor through relatable scenarios that illustrate product use"
+    techniques:
+      - name: "Unexpected Consequences"
+        example: "One accidental press of the 'max' button transformed our kitchen into what looked like the set of a B-grade horror movie."
+      
+      - name: "Everyday Chaos"
+        example: "I tested its durability in the natural habitat of a household with toddlers - the very definition of a stress test."
+      
+      - name: "Expectation Subversion"
+        example: "I expected to spend the evening carefully assembling it. Instead, it took less time to assemble than to open the box."
+  
+  self-deprecating_humor:
+    description: "Using personal foibles to highlight product features in entertaining way"
+    techniques:
+      - name: "Skill Limitations"
+        example: "As someone whose cooking skills top out at 'doesn't set off smoke detector,' this foolproof system has been life-changing."
+      
+      - name: "Tendency Acknowledgment"
+        example: "Perfect for impatient people (hello, me) who can't be bothered to read instruction manuals."
+      
+      - name: "Expectation Humility"
+        example: "I scoffed at the need for a specialized tool. Three broken regular spoons later, I'm eating my words along with perfectly separated avocados."
+
+# =============================================================================
+# Voice and Character Techniques
+# =============================================================================
+voice_techniques:
+  description: "Methods for developing distinctive narrative voice"
+  reference: "See narrative-elements.yaml for detailed storytelling techniques"
+  
+  voice_elements:
+    - element: "Vocabulary Selection"
+      implementation: "Choose words that reflect specific persona or attitude"
+      examples:
+        - "Technical expertise: precise, specialized terminology"
+        - "Casual enthusiasm: conversational, accessible language"
+    
+    - element: "Sentence Rhythm"
+      implementation: "Vary sentence structure and length to create distinctive cadence"
+      examples:
+        - "Short, direct sentences for emphasis"
+        - "Longer, flowing sentences for experiential content"
+    
+    - element: "Perspective Framing"
+      implementation: "Establish consistent viewpoint for observations"
+      examples:
+        - "Practical problem-solver perspective"
+        - "Detail-oriented perfectionist angle"
+  
+  character_creation:
+    description: "Personifying products or creating consistent reviewer persona"
+    methods:
+      - name: "Product Personification"
+        example: "This blender is the quiet, efficient librarian of kitchen appliances"
+      
+      - name: "Reviewer Persona"
+        example: "As a reformed kitchen gadget minimalist now embracing specialized tools..."
+
+# =============================================================================
+# Implementation Planning
+# =============================================================================
+implementation_planning:
+  description: "Process for selecting and implementing personality techniques"
+  reference: "See writing-process.yaml for integration with overall workflow"
+  
+  selection_process:
+    steps:
+      - "Consider product category and appropriate personality level"
+      - "Select 3-5 primary techniques appropriate for product"
+      - "Map techniques to specific product features or sections"
+      - "Plan distribution throughout review"
+  
+  distribution_guidelines:
+    - section: "Opening/Introduction"
+      recommended_techniques: "Self-deprecating observations, unexpected analogies, situational humor"
+      density: "High (1-2 techniques)"
+    
+    - section: "Technical/Specifications"
+      recommended_techniques: "Deliberate understatement, creative terminology, minimal analogies"
+      density: "Low (0-1 techniques)"
+    
+    - section: "Experiential Content"
+      recommended_techniques: "Absurd specificity, situational humor, narrative mini-stories"
+      density: "Medium-High (2-3 techniques)"
+    
+    - section: "Evaluation Content"
+      recommended_techniques: "Creative terminology, deliberate understatement, functional similes"
+      density: "Medium (1-2 techniques)"
+    
+    - section: "Verdict/Conclusion"
+      recommended_techniques: "Unexpected analogies, emotional journey conclusion"
+      density: "Medium (1 technique)"
+  
+  frequency_guidelines:
+    - "Total personality techniques: 5-8 per review depending on length"
+    - "Any single technique: Maximum 2-3 instances per review"
+    - "Complex techniques (extended analogies, mini-stories): 1-2 per review"
