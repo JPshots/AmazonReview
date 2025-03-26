@@ -1,0 +1,185 @@
+✅ common-definitions.schema.json - Shared definitions (COMPLETED)
+framework-config.schema.json - Configuration schema
+review-strategy.schema.json - Core principles schema
+question-framework.schema.json - Information gathering schema
+product-analysis.schema.json - Testing & evaluation schema
+content-structure.schema.json - Section framework schema
+keyword-strategy.schema.json - Search optimization schema
+writing-process.schema.json - Content creation workflow schema
+personality-balance.schema.json - Information/personality ratio schema
+personality-techniques.schema.json - Humor & creativity schema
+thematic-frameworks.schema.json - Theme development schema
+narrative-sensory.schema.json - Storytelling schema
+quality-assessment.schema.json - Review quality schema
+redundancy-verification.schema.json - Content optimization schema
+image-analysis.schema.json - Visual assessment schema
+examples-templates.schema.json - Implementation examples schema
+
+Content Files (Generate After Schemas)
+
+framework-config.json - Core configuration and workflow
+review-strategy.json - Strategic goals and principles
+integration-utils.js - JavaScript utilities for API
+question-framework.json - Strategic questioning methodology
+product-analysis.json - Product testing frameworks
+image-analysis.json - Image assessment guidelines
+content-structure.json - Section organization templates
+keyword-strategy.json - Search optimization approach
+writing-process.json - Content creation workflow
+personality-balance.json - Information/personality ratios
+personality-techniques.json - Humor & creative techniques
+thematic-frameworks.json - Theme development frameworks
+narrative-sensory.json - Storytelling & sensory frameworks
+quality-assessment.json - Quality evaluation criteria
+redundancy-verification.json - Duplication prevention
+examples-templates.json - Implementation examples
+
+Generation Order Logic
+
+Create all schemas first (starting with common definitions)
+Generate core system files
+Create information gathering components
+Develop content structure components
+Implement personality & creative elements
+Finish with quality control & examples
+
+
+# Optimal File Structure for Amazon Review Framework
+
+
+
+## Core System Files (3)
+
+1. **`framework-config.json`**
+   - Framework metadata and version information
+   - Component relationships and dependencies
+   - Global configuration settings
+   - Workflow stage definitions and progression rules
+
+2. **`review-strategy.json`**
+   - Core principles and value drivers
+   - Success metrics and evaluation criteria
+   - Strategic balancing principles
+   - Review goals and purpose
+
+3. **`integration-utils.js`**
+   - Functions for loading framework components based on workflow stage
+   - Prompt construction for Claude/Bedrock integration
+   - Context window management utilities
+   - State tracking between API calls
+
+## Information Gathering & Analysis (3)
+
+4. **`question-framework.json`**
+   - Strategic questioning methodology
+   - Question prioritization criteria
+   - Information gap identification
+   - Adaptive follow-up system
+   - Information tracking components
+
+5. **`product-analysis.json`**
+   - Product testing matrices and methodologies
+   - Technical specification analysis approaches
+   - Value analysis frameworks
+   - Comparative assessment techniques
+   - Performance evaluation standards
+
+6. **`image-analysis.json`**
+   - Visual assessment frameworks
+   - Product image interpretation guidelines
+   - Physical characteristics evaluation
+   - Visual quality indicators
+   - Image-based context analysis
+
+## Content Structure & Organization (3)
+
+7. **`content-structure.json`**
+   - Section frameworks and organization
+   - Product-specific adaptations
+   - Information flow principles
+   - Review structure fundamentals
+   - Section naming and formatting
+   - Mobile optimization considerations
+
+8. **`keyword-strategy.json`**
+   - Keyword categories and prioritization
+   - Search optimization approach
+   - Natural integration techniques
+   - Placement strategy and verification
+   - Keyword distribution guidelines
+
+9. **`writing-process.json`**
+   - Content creation workflow steps
+   - Pre-writing planning framework
+   - Length optimization guidance
+   - Draft creation and revision process
+   - Product adaptation methodology
+
+## Personality & Creative Elements (4)
+
+10. **`personality-balance.json`**
+    - Information/personality ratio guidelines
+    - Content type allocations
+    - Product-specific adjustments
+    - Section-specific personality targets
+    - Front-loading implementation
+    - Balance assessment methods
+
+11. **`personality-techniques.json`**
+    - Humor approaches and implementation
+    - Figurative language techniques
+    - Voice and perspective methods
+    - List item enhancement strategies
+    - Strategic technique distribution
+
+12. **`thematic-frameworks.json`**
+    - Theme discovery and development
+    - Creative approach generation
+    - Thematic implementation guidance
+    - Anchor point identification
+    - Theme-to-content mapping strategies
+
+13. **`narrative-sensory.json`**
+    - Storytelling techniques and structures
+    - Micro-narrative construction
+    - Emotional journey mapping
+    - Sensory detail integration
+    - Product-specific sensory priorities
+
+## Quality Control & Implementation (3)
+
+14. **`quality-assessment.json`**
+    - Review quality evaluation criteria
+    - Scoring systems and benchmarks
+    - Content value density metrics
+    - Improvement identification framework
+    - Strategic quality enhancement
+
+15. **`redundancy-verification.json`**
+    - Redundancy detection methodology
+    - Content specialization guidelines
+    - Information progression principles
+    - Resolution strategies for duplication
+    - Final verification checklists
+    - Authentic voice verification
+
+16. **`examples-templates.json`**
+    - Complete review examples
+    - Section-specific illustrations
+    - Before/after improvement demonstrations
+    - Category-specific implementation examples
+    - Structure and pattern templates
+
+## Benefits of this Structure
+
+1. **Balanced Granularity**: 16 files is a manageable number while providing enough separation of concerns.
+
+2. **Reduced Overlap**: Related concepts are grouped to minimize redundancy and conflicting information.
+
+3. **Maintenance Efficiency**: You'll rarely need to open more than 2-3 related files for most updates.
+
+4. **API Optimization**: Files align with natural workflow stages for efficient loading with Claude/Bedrock.
+
+5. **Clear Boundaries**: Each file has a distinct purpose with minimal content overlap.
+
+This structure gives you a good balance between maintainability and proper separation of concepts, while aligning well with your planned AWS Bedrock implementation.
