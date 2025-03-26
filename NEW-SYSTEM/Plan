@@ -1,14 +1,14 @@
-✅ common-definitions.schema.json - Shared definitions (COMPLETED)
-framework-config.schema.json - Configuration schema
-review-strategy.schema.json - Core principles schema
-question-framework.schema.json - Information gathering schema
-product-analysis.schema.json - Testing & evaluation schema
-content-structure.schema.json - Section framework schema
-keyword-strategy.schema.json - Search optimization schema
-writing-process.schema.json - Content creation workflow schema
-personality-balance.schema.json - Information/personality ratio schema
-personality-techniques.schema.json - Humor & creativity schema
-thematic-frameworks.schema.json - Theme development schema
+✅ common-definitions.schema.json - Shared definitions 
+ framework-config.schema.json - Configuration schema
+✅review-strategy.schema.json - Core principles schema
+✅ question-framework.schema.json - Information gathering schema
+✅product-analysis.schema.json - Testing & evaluation schema
+✅content-structure.schema.json - Section framework schema
+✅keyword-strategy.schema.json - Search optimization schema
+✅writing-process.schema.json - Content creation workflow schema
+✅personality-balance.schema.json - Information/personality ratio schema
+✅personality-techniques.schema.json - Humor & creativity schema
+✅thematic-frameworks.schema.json - Theme development schema
 narrative-sensory.schema.json - Storytelling schema
 quality-assessment.schema.json - Review quality schema
 redundancy-verification.schema.json - Content optimization schema
