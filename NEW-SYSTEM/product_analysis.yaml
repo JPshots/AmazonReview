@@ -1,0 +1,238 @@
+# product_analysis.yaml
+# Framework for comprehensive product evaluation across multiple dimensions
+
+# =============================================================================
+# Overview
+# =============================================================================
+overview:
+  description: "This file provides frameworks for thorough product analysis and evaluation"
+  primary_purpose: "Guide systematic testing, documentation, and analysis of products across multiple dimensions"
+  related_components:
+    - component: "question-framework.yaml"
+      relationship: "Provides methodology for gathering initial product information through strategic questioning"
+    - component: "content-structure.yaml"
+      relationship: "Defines how analysis results should be structured in the final review"
+    - component: "writing-process.yaml"
+      relationship: "Outlines how analysis fits into the overall review creation workflow"
+
+# =============================================================================
+# Core Analysis Principles
+# =============================================================================
+core_principles:
+  description: "Fundamental approaches to thorough product analysis"
+  
+  principles:
+    - name: "Multi-dimensional Testing"
+      definition: "Evaluate products across multiple variables and scenarios"
+      implementation: "Test across different environments, conditions, and use cases"
+    
+    - name: "Objective Measurement"
+      definition: "Gather concrete, measurable data rather than subjective impressions"
+      implementation: "Record specific measurements, times, and performance metrics"
+    
+    - name: "Comparative Context"
+      definition: "Evaluate products relative to alternatives and expectations"
+      implementation: "Compare with competitors, traditional methods, and manufacturer claims"
+    
+    - name: "Edge Case Exploration"
+      definition: "Test boundaries and limitations beyond typical usage"
+      implementation: "Identify and test potential failure modes and unexpected use cases"
+
+# =============================================================================
+# Image Analysis Framework
+# =============================================================================
+image_analysis_framework:
+  description: "Methodology for extracting valuable information from product images"
+  
+  analysis_categories:
+    - name: "Physical Characteristics"
+      questions:
+        - "What dimensions and proportions are visible relative to common objects?"
+        - "What materials and finishes are identifiable from close-up shots?"
+        - "Are there visible quality indicators in construction or assembly?"
+    
+    - name: "Usage Context"
+      questions:
+        - "What environmental context is shown in product usage photos?"
+        - "How does the product interact with its intended space?"
+        - "What complementary items are shown with the product?"
+    
+    - name: "Design Details"
+      questions:
+        - "What control interfaces or adjustment mechanisms are visible?"
+        - "How are components arranged or connected?"
+        - "What design choices are evident in the aesthetics?"
+  
+  implementation_guidance:
+    - "Cross-reference image observations with provided specifications"
+    - "Use image analysis to verify or challenge written claims"
+    - "Document any discrepancies between images and product descriptions"
+    - "Look for unintentional revelations in background or context"
+
+# =============================================================================
+# Product Testing Matrices
+# =============================================================================
+product_testing_matrices:
+  description: "Structured approach for comprehensive product testing across multiple dimensions"
+  
+  matrix_creation_process:
+    - "Identify product category and primary function"
+    - "Determine 3-5 key testing dimensions relevant to the product"
+    - "For each dimension, define specific variables to test"
+    - "Document testing methodology for consistent application"
+    - "Create structured documentation format for results"
+  
+  example_dimensions:
+    - category: "Kitchen Appliances"
+      dimensions:
+        - "Food Types (wet, dry, sticky, frozen, etc.)"
+        - "Duration (quick tasks, extended operation, etc.)"
+        - "Cleaning Methods (handwashing, dishwasher, etc.)"
+        - "Storage Options (assembled, disassembled, etc.)"
+    
+    - category: "Personal Care Devices"
+      dimensions:
+        - "User Variables (skin/hair types, sensitivity levels, etc.)"
+        - "Usage Settings (bathroom, travel, outdoors, etc.)"
+        - "Time Factors (quick use, thorough application, etc.)"
+        - "Maintenance Requirements (cleaning, replacement parts, etc.)"
+  
+  implementation_guidance:
+    - "Plan testing matrix before product testing begins"
+    - "Use matrix to structure testing approach"
+    - "Reference matrix in review to demonstrate thoroughness"
+
+# =============================================================================
+# Technical Specification Analysis
+# =============================================================================
+technical_specification_analysis:
+  description: "Framework for evaluating and contextualizing product specifications"
+  
+  specification_categories:
+    - name: "Physical Specifications"
+      elements: "Dimensions, weight, materials, construction"
+      verification: "Measure and verify all stated dimensions and weight"
+    
+    - name: "Performance Specifications"
+      elements: "Speed, power consumption, capacity, throughput"
+      verification: "Test under both optimal and non-optimal conditions"
+    
+    - name: "Compatibility Specifications"
+      elements: "Connection types, ecosystem requirements, accessory compatibility"
+      verification: "Test with stated compatible systems and identify limitations"
+    
+    - name: "Durability Specifications"
+      elements: "Lifespan claims, warranty terms, environmental resistance"
+      verification: "Document wear indicators and estimate realistic lifespan"
+  
+  real_world_contextualization:
+    description: "Methods for making technical specifications meaningful to readers"
+    techniques:
+      - name: "Practical Translation"
+        example: "'27W charging' means a full charge in approximately 90 minutes"
+      
+      - name: "Comparative Framing"
+        example: "'3mm thickness' is approximately the thickness of three credit cards"
+      
+      - name: "Usage Scenario Impact"
+        example: "'IPX7 waterproofing' means you can use it in the shower but not for swimming"
+
+# =============================================================================
+# Comparative Product Assessment
+# =============================================================================
+comparative_product_assessment:
+  description: "Framework for meaningful product comparison"
+  
+  comparison_approaches:
+    - name: "Direct Alternative Comparison"
+      implementation: "Compare with direct competitors in same price range across identical dimensions"
+    
+    - name: "Previous Generation Comparison"
+      implementation: "Identify specific improvements or changes from earlier versions"
+    
+    - name: "Traditional Method Comparison"
+      implementation: "Compare with conventional or manual alternatives for time/effort savings"
+    
+    - name: "Price-Tier Comparison"
+      implementation: "Compare with both higher and lower priced alternatives for value assessment"
+  
+  comparison_dimensions:
+    - category: "Kitchen Appliances"
+      key_dimensions: "Performance, noise level, cleaning effort, storage footprint, value for price"
+    
+    - category: "Electronics"
+      key_dimensions: "Battery life, processing speed, build quality, user interface, ecosystem integration"
+  
+  ethical_guidelines:
+    - "Only compare with products you have actually used"
+    - "Acknowledge limitations in testing methodology"
+    - "Represent competing products fairly and accurately"
+
+# =============================================================================
+# Value Analysis Framework
+# =============================================================================
+value_analysis_framework:
+  description: "Structured approach to determining and documenting product value"
+  
+  value_dimensions:
+    - name: "Financial Value"
+      elements: "Initial cost, ongoing expenses, lifespan, cost per use"
+      example: "At $8 per bag with an average 15-use lifespan, each popcorn session costs about 53 cents."
+    
+    - name: "Time Value"
+      elements: "Time saved, learning curve, maintenance time"
+      example: "While setup takes 15 minutes initially, the device saves approximately 20 minutes per use."
+    
+    - name: "Quality Value"
+      elements: "Results quality, consistency, unique capabilities"
+      example: "The texture improvement is remarkable, while the shelf life seems about the same as regular kernels."
+    
+    - name: "Experiential Value"
+      elements: "Enjoyment, reduced frustration, aesthetic benefits"
+      example: "Beyond the time savings, the reduced noise transforms the morning routine from chaotic to peaceful."
+  
+  calculation_methods:
+    - name: "Cost Per Use Method"
+      formula: "Total Cost (purchase + consumables) ÷ Expected Number of Uses"
+      application: "Ideal for items with clear usage count"
+    
+    - name: "Cost Per Time Saved Method"
+      formula: "Total Cost ÷ Total Time Saved Over Lifespan"
+      application: "Best for products that primarily save time"
+    
+    - name: "Replacement Analysis Method"
+      formula: "Compare total cost of new product vs. continuing with existing solution"
+      application: "Optimal for upgrade or replacement decisions"
+
+# =============================================================================
+# Documentation and Integration
+# =============================================================================
+documentation_and_integration:
+  description: "Methods for documenting analysis and integrating into reviews"
+  reference: "See writing-process.yaml for the complete workflow integration process"
+  
+  documentation_formats:
+    - name: "Testing Journal"
+      format: "Chronological record of testing experiences and observations"
+    
+    - name: "Structured Results Matrix"
+      format: "Organized presentation of test results across multiple dimensions"
+    
+    - name: "Comparative Analysis Table"
+      format: "Side-by-side comparison of subject product with alternatives"
+  
+  review_integration:
+    - name: "Evidence-Based Claims"
+      implementation: "Support review statements with specific test data"
+    
+    - name: "Testing Narrative Integration"
+      implementation: "Transform test data into engaging stories"
+    
+    - name: "Strategic Data Presentation"
+      implementation: "Highlight most relevant data points for purchase decisions"
+  
+  implementation_guidance:
+    - "Document testing methodology to establish credibility"
+    - "Balance technical data with practical implications"
+    - "Integrate testing data naturally within review narrative"
+    - "Highlight unexpected or counter-intuitive findings"
