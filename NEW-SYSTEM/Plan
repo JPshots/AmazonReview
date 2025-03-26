@@ -1,3 +1,30 @@
+Instructions for schema
+    1. **Tiered Schema Approach**:
+    - Core validation schemas (strictly structural validation)
+    - Extended schemas (containing additional guidance/examples)
+    - Implementation files (containing the actual content)
+
+    2. **Clear Separation of Concerns**:
+    - Keep validation rules separate from implementation guidance
+    - Move extensive examples to separate example files
+    - Use references between schemas rather than duplicating structures
+
+    3. **Optimized Property Definitions**:
+    - Define common structures once and reference them
+    - Minimize redundancy in property descriptions
+    - Use simpler types when possible
+
+    4. **Progressive Implementation Strategy**:
+    - Start with minimal schemas that validate core structure
+    - Extend schemas only as needed for specific validation requirements
+    - Keep implementation details in the JSON files, not in the schemas
+
+    5. **Schema Documentation Approach**:
+    - Brief descriptions in schemas for validation purposes
+    - More detailed explanations in separate documentation
+    - Use examples sparingly within schemas, focusing on structure
+
+that are just detailed enough to validate structure without becoming burdensome to maintain.
 common-definitions.schema.json - Shared definitions 
 framework-config.schema.json - Configuration schema
 review-strategy.schema.json - Core principles schema
