@@ -1,0 +1,229 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Amazon Review Framework Configuration Schema",
+    "description": "Configuration schema for the Amazon Review Framework system",
+    "type": "object",
+    "required": ["metadata", "frameworkConfig", "workflowStages", "componentRelationships"],
+    "properties": {
+      "metadata": {
+        "$ref": "common.schema.json#/definitions/metadata"
+      },
+      "frameworkConfig": {
+        "type": "object",
+        "required": ["version", "frameworkName", "purpose"],
+        "properties": {
+          "version": {
+            "type": "string",
+            "description": "Version number of the overall framework",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$"
+          },
+          "frameworkName": {
+            "type": "string",
+            "description": "Name of the framework",
+            "default": "Amazon Review Framework"
+          },
+          "purpose": {
+            "type": "string",
+            "description": "Overall purpose of the framework"
+          },
+          "targetAudience": {
+            "type": "string",
+            "description": "Intended users of the framework"
+          },
+          "coreGoals": {
+            "type": "array",
+            "description": "Primary goals the framework aims to achieve",
+            "items": {
+              "type": "string"
+            }
+          },
+          "globalSettings": {
+            "type": "object",
+            "description": "Global configuration settings for the framework",
+            "properties": {
+              "defaultPersonalityRatio": {
+                "type": "object",
+                "description": "Default personality to information ratio",
+                "properties": {
+                  "informational": {
+                    "type": "integer",
+                    "description": "Percentage of informational content",
+                    "default": 55
+                  },
+                  "personality": {
+                    "type": "integer",
+                    "description": "Percentage of personality content",
+                    "default": 40
+                  },
+                  "flexibility": {
+                    "type": "integer",
+                    "description": "Percentage of flexible content",
+                    "default": 5
+                  }
+                }
+              },
+              "defaultWordCount": {
+                "type": "object",
+                "description": "Default word count ranges by product complexity",
+                "properties": {
+                  "simple": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": "integer",
+                        "default": 800
+                      },
+                      "max": {
+                        "type": "integer",
+                        "default": 900
+                      }
+                    }
+                  },
+                  "moderate": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": "integer",
+                        "default": 900
+                      },
+                      "max": {
+                        "type": "integer",
+                        "default": 1100
+                      }
+                    }
+                  },
+                  "complex": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": "integer",
+                        "default": 1100
+                      },
+                      "max": {
+                        "type": "integer",
+                        "default": 1200
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "workflowStages": {
+        "type": "array",
+        "description": "Stages in the review creation workflow",
+        "items": {
+          "$ref": "common.schema.json#/definitions/workflowStage"
+        }
+      },
+      "componentRelationships": {
+        "type": "array",
+        "description": "Relationships between framework components",
+        "items": {
+          "$ref": "common.schema.json#/definitions/componentRelationship"
+        }
+      },
+      "corePrinciples": {
+        "type": "array",
+        "description": "Fundamental principles guiding the framework",
+        "items": {
+          "$ref": "common.schema.json#/definitions/principle"
+        }
+      },
+      "aiRoleDefinition": {
+        "type": "object",
+        "description": "Definition of the AI's role in the review process",
+        "required": ["primaryRole", "workflowClarification", "correctUnderstanding", "creativePermissions"],
+        "properties": {
+          "primaryRole": {
+            "type": "string",
+            "description": "Primary role of the AI in the review process"
+          },
+          "workflowClarification": {
+            "type": "string",
+            "description": "Clarification of the AI-human workflow"
+          },
+          "correctUnderstanding": {
+            "type": "array",
+            "description": "Correct understanding of the AI's role",
+            "items": {
+              "type": "string"
+            }
+          },
+          "incorrectUnderstanding": {
+            "type": "array",
+            "description": "Incorrect understanding of the AI's role",
+            "items": {
+              "type": "string"
+            }
+          },
+          "creativePermissions": {
+            "type": "array",
+            "description": "Areas where the AI has creative freedom",
+            "items": {
+              "type": "object",
+              "required": ["area", "permission"],
+              "properties": {
+                "area": {
+                  "type": "string",
+                  "description": "Area of creative freedom"
+                },
+                "permission": {
+                  "type": "string",
+                  "description": "Specific permission granted"
+                },
+                "example": {
+                  "type": "string",
+                  "description": "Example of the permission in practice"
+                },
+                "restriction": {
+                  "type": "string",
+                  "description": "Any restrictions on the permission"
+                }
+              }
+            }
+          },
+          "correctProcess": {
+            "type": "array",
+            "description": "Correct process for the AI to follow",
+            "items": {
+              "type": "object",
+              "required": ["order", "action"],
+              "properties": {
+                "order": {
+                  "type": "integer",
+                  "description": "Step order"
+                },
+                "action": {
+                  "type": "string",
+                  "description": "Action to take"
+                }
+              }
+            }
+          }
+        }
+      },
+      "successMetrics": {
+        "type": "object",
+        "description": "Metrics for evaluating review success",
+        "properties": {
+          "quantitative": {
+            "type": "array",
+            "description": "Quantitative success metrics",
+            "items": {
+              "$ref": "common.schema.json#/definitions/metric"
+            }
+          },
+          "qualitative": {
+            "type": "array",
+            "description": "Qualitative success metrics",
+            "items": {
+              "$ref": "common.schema.json#/definitions/metric"
+            }
+          }
+        }
+      }
+    }
+  }
