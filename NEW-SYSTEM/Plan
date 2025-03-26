@@ -24,7 +24,7 @@ Instructions for schema
     - More detailed explanations in separate documentation
     - Use examples sparingly within schemas, focusing on structure
 
-that are just detailed enough to validate structure without becoming burdensome to maintain.
+
 common-definitions.schema.json - Shared definitions 
 framework-config.schema.json - Configuration schema
 review-strategy.schema.json - Core principles schema
