@@ -1,5 +1,5 @@
 ✅ common-definitions.schema.json - Shared definitions 
- framework-config.schema.json - Configuration schema
+✅ framework-config.schema.json - Configuration schema
 ✅review-strategy.schema.json - Core principles schema
 ✅ question-framework.schema.json - Information gathering schema
 ✅product-analysis.schema.json - Testing & evaluation schema
