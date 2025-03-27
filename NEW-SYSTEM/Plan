@@ -42,9 +42,66 @@ redundancy-verification.schema.json - Content optimization schema
 image-analysis.schema.json - Visual assessment schema
 examples-templates.schema.json - Implementation examples schema
 
-✅
+
 Content Files (Generate After Schemas)
 
+
+## 1. **Implementation Architecture Principles**
+- **Modular Independence**: Each JSON file should function as a standalone module while integrating with the whole framework
+- **Single Source of Truth**: Define core concepts once and reference them elsewhere
+- **Progressive Detail**: Layer implementation from core principles to specific techniques
+- **Separation of Concerns**: Keep structure, content, and process guidance in appropriate files
+- **Practical Focus**: Prioritize implementation guidance over theoretical descriptions
+
+## 2. **Cross-Reference Strategy**
+- **Reference Types**:
+  - Direct references for implementation dependencies (e.g., "See keyword-strategy.json > placement_strategy")
+  - Conceptual references for related guidance (e.g., "Refer to personality-balance.json for complementary techniques")
+- **Implementation**:
+  - Use consistent path notation (`file.json > section > subsection`)
+  - Include brief context with each reference to minimize jumping between files
+  - Use specific section IDs/anchors rather than generic file references
+- **Circular Reference Prevention**:
+  - Identify potential circular dependencies before implementation
+  - Establish clear hierarchical relationships between components
+
+## 3. **Content Organization Strategy**
+- **Component Hierarchy**:
+  - Core principles and goals at the top level
+  - Implementation approaches at the middle level
+  - Specific techniques and examples at the detailed level
+- **Naming Conventions**:
+  - Consistent property naming across files
+  - Descriptive, action-oriented names for techniques
+  - Prefix strategies with verbs, principles with nouns
+
+## 4. **Content Optimization Techniques**
+- **Example Management**:
+  - Include minimal illustrative examples in implementation files
+  - Move extensive examples to examples-templates.json
+  - Reference specific examples rather than duplicating them
+- **Duplication Prevention**:
+  - Create shared utility structures for common patterns
+  - Use inheritance and extensions rather than duplication
+  - Consolidate similar concepts across previous framework components
+
+## 5. **Implementation Workflow**
+- **Stage 1**: Create core framework configuration
+- **Stage 2**: Implement strategic guidance components (goals, principles)
+- **Stage 3**: Build information gathering components
+- **Stage 4**: Develop content structure and writing process
+- **Stage 5**: Add personality and creative elements
+- **Stage 6**: Implement quality control and optimization
+- **Stage 7**: Finalize with examples and templates
+
+## 6. **Testing and Validation Approach**
+- Validate each file against its corresponding schema
+- Create minimal working examples to test interdependencies
+- Implement progressive testing from core components outward
+
+
+
+Shall we proceed with implementing the first core components following these guidelines?
 framework-config.json - Core configuration and workflow
 review-strategy.json - Strategic goals and principles
 integration-utils.js - JavaScript utilities for API
